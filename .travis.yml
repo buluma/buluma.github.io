@@ -3,30 +3,4 @@ language: python
 python:
   - 2.7
 
-services:
-  - redis-server
-  - memcache
-  - mysql
-
-before_script:
-  - memcached -p 11311 -d
-  - memcached -p 7901 -d
-  - memcached -p 7902 -d
-  - memcached -p 7903 -d
-  - mysql -e 'drop database if exists valentine;'
-  - mysql -e 'create database valentine;'
-  - mysql -D valentine < vilya/databases/schema.sql
-
-install:
-  - pip install -r requirements.txt
-
-script:
-  - >
-      py.test tests --ignore=tests/test_git.py
-      --ignore=tests/test_git_commit_one_file.py
-      --ignore=tests/test_gyt.py --ignore=tests/test_project_git_calls.py
-      --ignore=tests/pulls/test_model.py --ignore=tests/pulls/test_ticket.py
-      --ignore=tests/issues/test_project_issue.py
-      --ignore=tests/issues/test_issue.py
-      --ignore=tests/test_stat.py --ignore=tests/test_test.py
-      --ignore=tests/pulls/test_pullrequest.py
+install: true
