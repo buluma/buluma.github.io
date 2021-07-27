@@ -6,11 +6,11 @@ I specialize in infrastructural development practices, which include:
 
 (Basically everything as code)
 
-1. Ansible
-2. Docker
-3. Kubernetes
+1. Ansible.
+2. Docker.
+3. Kubernetes.
 4. CI/CD Travis, GitLab, GitHub.
-5. Hashicorp Vagrant, Terraform, Vault
+5. Hashicorp Vagrant, Terraform.
 
 Please find projects I use on [GitHub](https://github.com/buluma/).
 
