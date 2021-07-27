@@ -12,14 +12,14 @@ There is [quite](https://docs.ansible.com/ansible/latest/user_guide/playbooks_re
 
 Before using any role, they need to be installed. There are a few ways to do that:
 
-1. Install them one-by-one using `ansible-galaxy install robertdebock.bootstrap` for example.
+1. Install them one-by-one using `ansible-galaxy install buluma.bootstrap` for example.
 2. Install them using a `requirements.yml` file (see below) using `ansible-galaxy install --role-file requirements.yml`.
 
 The `requirements.yml` file is a list of roles, for example:
 
 ```yaml
 ---
-- robertdebock.bootstrap
+- buluma.bootstrap
 ```
 
 These roles are typically installed in `~/.ansible/roles/`. You can configure Ansible to look somewhere else though, for example this `ansible.cfg` stores the roles "locally", in the same directory where the ansible.cfg is found:
@@ -41,7 +41,7 @@ Once the roles are downloaded, you can integrate them into a playbook, for examp
   gather_facts: no
 
   roles:
-    - role: robertdebock.bootstrap
+    - role: buluma.bootstrap
 ```
 
 You can also use `[include_role](https://docs.ansible.com/ansible/latest/modules/include_role_module.html)`.
@@ -59,7 +59,7 @@ Most roles can be controlled using [variables](https://docs.ansible.com/ansible/
 
 
   roles:
-    - role: robertdebock.bootstrap
+    - role: buluma.bootstrap
       bootstrap_user: root
 ```
 
@@ -83,7 +83,7 @@ This is a layout of the file and directory structure that I tend to use:
 ├── playbook.yml
 └── roles
     ├── requirements.yml
-    └── robertdebock.bootstrap
+    └── buluma.bootstrap
 ```
 
 Also see [best practices](https://docs.ansible.com/ansible/latest/user_guide/playbooks_best_practices.html#directory-layout).
@@ -126,7 +126,7 @@ Also see [group variables](https://docs.ansible.com/ansible/latest/user_guide/in
   gather_facts: no
 
   roles:
-    - robertdebock.bootstrap
+    - buluma.bootstrap
 ```
 
 Also see [working with playbooks](https://docs.ansible.com/ansible/latest/user_guide/playbooks.html).
@@ -135,12 +135,12 @@ Also see [working with playbooks](https://docs.ansible.com/ansible/latest/user_g
 
 ```yaml
 ---
-- robertdebock.bootstrap
+- buluma.bootstrap
 ```
 
 Also see [installing roles from a file](https://docs.ansible.com/ansible/latest/reference_appendices/galaxy.html#installing-multiple-roles-from-a-file).
 <!-- TODO: change to local -->
-### [roles/robertdebock.bootstrap](#roles-robertdebock-bootstrap)
+### [roles/buluma.bootstrap](#roles-buluma-bootstrap)
 
 Although a consumer of the role does not need to look into the role and `ansible-galaxy install` will manage the contents of these roles, here is a brief explanation what can be found here:
 
