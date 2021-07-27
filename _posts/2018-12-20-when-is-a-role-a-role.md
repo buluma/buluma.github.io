@@ -18,7 +18,7 @@ Repeating yourself may:
 
 ## Keep it simple
 
-Over time Ansible roles tend to get more complex. [Jeff Geerling](https://www.jeffgeerling.com/) tries to [keep Ansible roles under 100 lines](https://www.ansible.com/blog/make-your-ansible-playbooks-flexible-maintainable-and-scalable). That can be a challenge, but I agree to Jeff.
+Over time Ansible roles tend to get more complex. [Jeff Geerling](https://www.jeffgeerling.com/) tries to [keep Ansible roles under 100 lines](https://www.ansible.com/blog/make-your-ansible-playbooks-flexible-maintainable-and-scalable). That can be a challenge, but I agree with Jeff.
 
 Whenever I open up somebody else' Ansible role and the code keeps on scrolling, I tend to get demotivated:
 

@@ -4,7 +4,7 @@ title: Fedora 30 and above use python-3
 
 # Fedora 30 and above use python-3
 
-Fedora 30 (and above) uses python 3 and start to deprecate python 2 package like `python2-dnf`.
+Fedora 30 (and above) uses python 3 and starts to deprecate python 2 package like `python2-dnf`.
 
 Ansible 2.8 and above [discover the python interpreter](https://docs.ansible.com/ansible/latest/reference_appendices/interpreter_discovery.html), but Ansible 2.7 and lower do not have this feature.
 

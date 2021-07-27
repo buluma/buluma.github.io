@@ -11,7 +11,7 @@ The intent is to let a developer of an Action think about 'hard stuff' and the u
 So; I wrote a GitHub action to test an Ansible role with a single action.
 
 ## Using the GitHub Action.
-
+<!-- TODO: change to local -->
 Have a look at the [Molecule action](https://github.com/marketplace/actions/test-ansible-roles-with-molecule).
 
 It boils down to adding this snippet to `.github/workflows/molecule.yml`:
@@ -53,11 +53,11 @@ You may want to write your own action, here is an overview of the required compo
 ```
 
 ### 1. Create a container
-
+<!-- TODO: change to local -->
 First create a container that has all tools installed you need and push it to [Docker Hub](https://hub.docker.com/repository/docker/robertdebock/github-action-molecule/). Here is the [code for my container](https://github.com/robertdebock/docker-github-action-molecule)
 
 ### 2. Create an action
-
+<!-- TODO: change to local -->
 Create a [GitHub repository per action](https://github.com/robertdebock/molecule-action). It should at least contain an `action.yml`. Have a look at [the documentation for Actions](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/building-actions).
 
 ### 3. Integrate your action
@@ -75,7 +75,7 @@ Pick a repository, and add a file (likely with the name of the action) in `.gitl
         with:
           image: ${{ matrix.image }}
 ```
-
+<!-- TODO: change to local -->
 [A full example here](https://github.com/robertdebock/ansible-role-squid/blob/master/.github/workflows/molecule.yml).
 
 The benefit is that you (or others) can reuse the action. Have fun making GitHub actions!

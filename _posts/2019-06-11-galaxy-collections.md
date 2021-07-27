@@ -28,6 +28,7 @@ The whole process is [documented](https://galaxy.ansible.com/docs/contributing/c
 I've published my [development_environment](https://github.com/robertdebock/ansible-development-environment) and only had to change these things:
 
 ## 1. Add galaxy.yml
+<!-- #TODO -->
 
 ```
 namespace: "buluma"
@@ -44,7 +45,6 @@ tags:
     - development
     - molecule
     - ara
-<!-- #TODO -->
 repository: "https://github.com/robertdebock/ansible-development-environment"
 documentation: "https://github.com/robertdebock/ansible-development-environment/blob/master/README.md"
 homepage: "https://robertdebock.nl"

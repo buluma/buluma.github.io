@@ -4,8 +4,9 @@ title: Why should you use set_fact
 
 # Why you should use the Ansible set_fact module
 
-So far it seems that the Ansible `set_fact` module is not required very often. I found 2 cases in [the roles I write](https://robertdebock.nl/):
+So far it seems that the Ansible `set_fact` module is not required very often. I found 2 cases in [the roles I write](https://buluma.github.io/):
 
+<!-- TODO: Change to local -->
 In the [awx role](https://galaxy.ansible.com/robertdebock/awx):
 
 ```yaml
@@ -16,6 +17,7 @@ In the [awx role](https://galaxy.ansible.com/robertdebock/awx):
     - "{{ awx_get_tags.json | first }}"
 ```
 
+<!-- TODO: Change to local -->
 In the [zabbix_server role](https://galaxy.ansible.com/robertdebock/zabbix_server):
 
 ```yaml
@@ -26,6 +28,7 @@ In the [zabbix_server role](https://galaxy.ansible.com/robertdebock/zabbix_serve
 
 In both cases a "complex" variable strucure is saved into a simpler to call variable name.
 
+<!-- TODO: Change to local -->
 Variables that are constructed of other variables can be set in `vars/main.yml`. For example the [kernel](https://galaxy.ansible.com/robertdebock/kernel) role needs a version of the kernel in `defaults/main.yml`:
 
 ```yaml

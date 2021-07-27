@@ -4,7 +4,7 @@ title: Ansible Molecule tests using Red Hat UBI images
 
 # Ansible Molecule tests using Red Hat UBI images
 
-[Red Hat](https://www.redhat.com/en) now offers [Universal Base Images(UBI)](https://www.redhat.com/en/blog/introducing-red-hat-universal-base-image). These images are stored on [Red Hat's registry](https://access.redhat.com/containers/):
+[Red Hat](https://www.redhat.com/en) now offers [Universal Base Images (UBI)](https://www.redhat.com/en/blog/introducing-red-hat-universal-base-image). These images are stored on [Red Hat's registry](https://access.redhat.com/containers/):
 
 - [UBI Red Hat Enterprise Linux 7](https://access.redhat.com/containers/?tab=overview#/registry.access.redhat.com/ubi7/ubi)
 - [UBI Red Hat Enterprise Linux 8](https://access.redhat.com/containers/?tab=overview#/registry.access.redhat.com/ubi8/ubi)

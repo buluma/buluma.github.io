@@ -19,9 +19,9 @@ I could imagine that requirements.yml will link depending modules **and** collec
 
 ```yaml
 ---
-- src: robertdebock.x
+- src: buluma.x
   type: role
-- src: robertdebock.y
+- src: buluma.y
   type: collection
 ```
 
@@ -39,7 +39,7 @@ Imagine `my_collection`'s requirements.yml:
 
 ```yaml
 ---
-- src: robertdebock.y
+- src: buluma.y
   type: collection
 ```
 

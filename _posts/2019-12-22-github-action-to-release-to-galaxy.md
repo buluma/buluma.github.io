@@ -112,4 +112,5 @@ jobs:
 
 Now your role is tested on the list of `images` specified.
 
+<!-- #TODO; update to local -->
 Hope these actions make it easier to develop, test and release your roles, if you find problems, please make an issue for either the [molecule](https://github.com/robertdebock/molecule-action/issues) or [galaxy](https://github.com/robertdebock/galaxy-action/issues) action.

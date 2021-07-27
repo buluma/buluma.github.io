@@ -4,7 +4,7 @@ title: Why would you write Ansible roles for multiple distributions?
 
 # Why would you write Ansible roles for multiple distributions?
 
-I got some feedback in a discussion with the audience at [DevOps Amsterdam](https://www.meetup.com/DevOpsAmsterdam/).
+During some disucussion with the audience at [DevOps Amsterdam](https://www.meetup.com/DevOpsAmsterdam/), I got some feedback;
 
 My statement are:
 

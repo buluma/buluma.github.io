@@ -10,7 +10,7 @@ Now that [Travis has become unusable](https://blog.travis-ci.com/2020-11-02-trav
 
 ```shell
 export role=ansible-role-dns
-cd Documents/github/robertdebock
+cd Documents/github/buluma
 docker run --rm --name gitlabci --volume $(pwd)/${role}:/${role}:z --privileged --tty --interactive docker:stable-dind
 ```
 

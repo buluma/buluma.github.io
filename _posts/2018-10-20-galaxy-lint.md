@@ -6,7 +6,7 @@ title: Galaxy will score your roles
 
 Galaxy currently is a dumping place for Ansible roles, anybody can submit any quality role there and it's kept indefinitely.
 
-For example [Nginx is listed 1122 times](https://galaxy.ansible.com/search?keywords=nginx&order_by=-relevance&page_size=10). Happily [Jeff Geerling](https://github.com/geerlingguy)'s role shows up on top, probably because it has the most downloads.
+For example [Nginx is listed 1122 times](https://galaxy.ansible.com/search?keywords=nginx&order_by=-relevance&page_size=10). Happily [Jeff Geerling](https://github.com/geerlingguy)'s role shows up among the top list, probably because it has the most downloads.
 
 The [Galaxy team](https://github.com/ansible/galaxy/graphs/contributors) has decided that checking for quality is one way to improve search results. It looks liek roles will have a few criterea:
 

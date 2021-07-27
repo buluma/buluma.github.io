@@ -9,7 +9,7 @@ title: How many modules do you need?
 Anyway, let's get some stats:
 
 # How many modules am I using?
-
+<!-- TODO: change to local -->
 That was not so difficult to estimate: **97 modules**.
 
 # What 'weird' modules?

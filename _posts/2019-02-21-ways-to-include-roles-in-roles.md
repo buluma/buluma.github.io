@@ -9,6 +9,7 @@ There are several ways to include roles from playbooks or roles.
 ### Classic
 The [classic](https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html) way:
 
+<!-- TODO: Change to local -->
 ```yaml
 ---
 - name: Build a machine
@@ -22,6 +23,7 @@ The [classic](https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse
 
 Or a variation that allows per-role variables:
 
+<!-- TODO: Change to local -->
 ```yaml
 ---
 - name: Build a machine
@@ -36,6 +38,7 @@ Or a variation that allows per-role variables:
 
 ### Include role
 
+<!-- TODO: Change to local -->
 The [include_role](https://docs.ansible.com/ansible/latest/modules/include_role_module.html) way:
 
 ```yaml
@@ -58,6 +61,7 @@ The [include_role](https://docs.ansible.com/ansible/latest/modules/include_role_
 ```
 
 Or a [with_items](https://docs.ansible.com/ansible/latest/user_guide/playbooks_loops.html) (since [Ansible 2.3](https://github.com/ansible/ansible/issues/17966)) variation:
+<!-- TODO: Change to local -->
 
 ```yaml
 ---
@@ -96,6 +100,7 @@ variable_y_for_role_name: bar
 
 A real life example is my [robertdebock.artifactory](https://galaxy.ansible.com/robertdebock/artifactory) role calls [robertdebock.service](https://galaxy.ansible.com/robertdebock/service) role to add a service.
 The code for [the artifactory role](https://github.com/robertdebock/ansible-role-artifactory/blob/master/tasks/main.yml) contains:
+<!-- TODO: Change to local -->
 
 ```yaml
 # snippet
