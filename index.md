@@ -1,4 +1,4 @@
-## [Ansible roles](#ansible-roles)
+## [Ansible Roles](#ansible-roles)
 
 These [Ansible](https://www.ansible.com/) roles are [simple in style](style.html) and [work well](how-to-use-these-roles.html) together on many distributions and many Ansible version.
 
@@ -349,4 +349,4 @@ The goal is to let all roles work on these Ansible version:
 - 2.9
 - devel (which is allowed to fail)
 
-See errors? Please help and [make a merge request on git](https://github.com/robertdebock/robertdebock.github.io/).
+See errors? Please help and [make a merge request on git](https://github.com/buluma/buluma.github.io/).
