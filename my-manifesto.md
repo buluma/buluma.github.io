@@ -3,7 +3,7 @@
 To keep a sharp eye on what is "right" in software development, here are a few rules I agree with.
 
 ## [Priorities](#priorities)
-When working on code, these are priorities:
+When working on code, these are the priorities:
 1. Failing CI
 2. User reported bugs.
 3. Self reported bugs.
