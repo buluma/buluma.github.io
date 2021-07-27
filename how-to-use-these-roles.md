@@ -1,6 +1,6 @@
 ## [How to use these roles](#how-to-use-these-roles)
 
-There is [quite](https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html) [some](https://docs.ansible.com/ansible/latest/user_guide/playbooks.html) [documentation](https://docs.ansible.com/ansible/latest/user_guide/playbooks_intro.html) available already, but it can't hurt to briefly explain how to use these roles.
+There is [quite](https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html) [some](https://docs.ansible.com/ansible/latest/user_guide/playbooks.html) [documentation](https://docs.ansible.com/ansible/latest/user_guide/playbooks_intro.html) available already, but it wouldn't hurt to briefly explain how to use these roles.
 
 ## [My promise](#my-promise)
 
@@ -8,7 +8,7 @@ There is [quite](https://docs.ansible.com/ansible/latest/user_guide/playbooks_re
 - These roles are as simple as possible. There can be cases where complicated stuff happens, but that's required from time to time.
 - These roles are thoroughly tested. On each commit, pull request and release and also on full virtual machines.
 
-## [Installing the roles](#installing the roles)
+## [Installing the roles](#installing-the-roles)
 
 Before using any role, they need to be installed. There are a few ways to do that:
 
@@ -139,7 +139,7 @@ Also see [working with playbooks](https://docs.ansible.com/ansible/latest/user_g
 ```
 
 Also see [installing roles from a file](https://docs.ansible.com/ansible/latest/reference_appendices/galaxy.html#installing-multiple-roles-from-a-file).
-
+<!-- TODO: change to local -->
 ### [roles/robertdebock.bootstrap](#roles-robertdebock-bootstrap)
 
 Although a consumer of the role does not need to look into the role and `ansible-galaxy install` will manage the contents of these roles, here is a brief explanation what can be found here:

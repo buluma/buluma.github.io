@@ -203,7 +203,6 @@ A monthly test to see of the role still works on the current distributions. Some
 |[ansible-playbook-vault](https://github.com/robertdebock/ansible-playbook-vault)|
 |[ansible-playbook-zabbix](https://github.com/robertdebock/ansible-playbook-zabbix)|
 
-|Dependencies
 ## [Dependencies](#dependencies)
 
 Most roles have a "soft dependency" described in `requirements.yml`. You can choose to use those roles if you like them. Here is an overview of these soft dependencies.
