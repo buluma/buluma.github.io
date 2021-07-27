@@ -2,7 +2,7 @@
 
 There is a relation between:
 
-- Ansilbe Platforms & Versions in `meta/main.yml` for a role.
+- Ansible Platforms & Versions in `meta/main.yml` for a role.
 - Docker Hub image names & Tags.
 - GitHub Branches.
 
