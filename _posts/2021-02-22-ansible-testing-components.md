@@ -13,7 +13,7 @@ To test Ansible, I use quite a number of components. This page lists the compone
 |molecule              |>=3,<4 |![c][c]|docker-github-action-molecule         |
 |tox                   |latest |n.a.   |docker-github-action-molecule         |
 |ansible-lint          |latest |![e][e]|docker-github-action-molecule         |
-|pre-commit            |2.9.3  |v2.10.1|nstalled on development desktop.      |
+|pre-commit            |2.9.3  |v2.10.1|installed on development desktop.      |
 |molecule-action       |2.6.16 |![g][g]|.github/workflows/molecule.yml        |
 |github-action-molecule|3.0.6  |![h][h]|.gitlab-ci.yml                        |
 |ubuntu                |20.04  |20.04  |.github/workflows/galaxy.yml          |
@@ -28,7 +28,7 @@ To test Ansible, I use quite a number of components. This page lists the compone
 |python                |3.9    |3.9    |.travis.yml                           |
 |pre-commit-hooks      |v3.4.0 |![r][r]|.pre-commit-config.yaml               |
 |yamllint              |v1.26.0|v1.26.0|.pre-commit-config.yaml               |
-|my pre-commit         |v1.1.2 |![u][u]|.pre-commit-config.yaml               |
+|my pre-commit         |v1.4.5 |![u][u]|.pre-commit-config.yaml               |
 |fedora                |33     |33     |docker-github-action-molecule         |
 
 [c]: https://img.shields.io/pypi/v/molecule
