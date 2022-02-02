@@ -45,10 +45,10 @@ Use dependencies when absolutely required, in other words: only use dependencies
 Keep the smallest (testable) related code in a repository. This ensures autonomous development, most independent testing and easy collaboration.
  
 There are multiple types of code:
-- The code for the application - Typically Python, C, PHP, etc.
+- The code for the application - Typically Python, PHP, etc.
 - Code packaging - Typically RPM, NPM, or PIP.
 - Code for configuration - Typically Ansible or Puppet.
-- The pipeline - Typically Travis-CI or GitLab-CI.
+- The pipeline - Typically GitLab-CI.
 - Test code - Typically Ansible playbooks, bats, goss or bash.
 
 ## [Integration](#integration)
