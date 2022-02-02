@@ -158,21 +158,6 @@ A monthly test to see of the role still works on the current distributions. Some
 |[zabbix_server](https://galaxy.ansible.com/robertdebock/zabbix_server)|[![github](https://github.com/robertdebock/ansible-role-zabbix_server/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-zabbix_server/actions)|[![gitlab](https://gitlab.com/robertdebock/ansible-role-zabbix_server/badges/master/pipeline.svg)](https://gitlab.com/robertdebock/ansible-role-zabbix_server)|[![version](https://img.shields.io/github/commits-since/robertdebock/ansible-role-zabbix_server/latest.svg)](https://github.com/robertdebock/ansible-role-zabbix_server/releases)|
 |[zabbix_web](https://galaxy.ansible.com/robertdebock/zabbix_web)|[![github](https://github.com/robertdebock/ansible-role-zabbix_web/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-zabbix_web/actions)|[![gitlab](https://gitlab.com/robertdebock/ansible-role-zabbix_web/badges/master/pipeline.svg)](https://gitlab.com/robertdebock/ansible-role-zabbix_web)|[![version](https://img.shields.io/github/commits-since/robertdebock/ansible-role-zabbix_web/latest.svg)](https://github.com/robertdebock/ansible-role-zabbix_web/releases)|-->
 
-# [Integration](#integration)
-
-|playbook|
-|--------|
-|[ansible-playbook-cloudtop](https://github.com/robertdebock/ansible-playbook-cloudtop)|
-|[ansible-playbook-consul](https://github.com/robertdebock/ansible-playbook-consul)|
-|[ansible-playbook-haproxy](https://github.com/robertdebock/ansible-playbook-haproxy)|
-|[ansible-playbook-minikube](https://github.com/robertdebock/ansible-playbook-minikube)|
-|[ansible-playbook-mylucie](https://github.com/robertdebock/ansible-playbook-mylucie)|
-|[ansible-playbook-rancher](https://github.com/robertdebock/ansible-playbook-rancher)|
-|[ansible-playbook-saltstack](https://github.com/robertdebock/ansible-playbook-saltstack)|
-|[ansible-playbook-terraform](https://github.com/robertdebock/ansible-playbook-terraform)|
-|[ansible-playbook-vault](https://github.com/robertdebock/ansible-playbook-vault)|
-|[ansible-playbook-zabbix](https://github.com/robertdebock/ansible-playbook-zabbix)|
-
 ## [Dependencies](#dependencies)
 
 Most roles have a "soft dependency" described in `requirements.yml`. You can choose to use those roles if you like them. Here is an overview of these soft dependencies.
@@ -192,9 +177,9 @@ Because these dependencies are loose, you have to include them in your playbook 
   become: yes
 
   roles:
-    - role: robertdebock.bootstrap
-    - role: robertdebock.java
-    - role: robertdebock.tomcat
+    - role: buluma.bootstrap
+    - role: buluma.java
+    - role: buluma.tomcat
 ```
 
 Some roles have a hard dependencies on another role, mainly for a shared handler or variables set in the parent role, used in the child role. More details on [how to use these roles](how-to-use-these-roles.html). These hard dependencies are describe in `meta/main.yml` under `dependencies`.
@@ -242,9 +227,7 @@ Ansible tests are being executed using the following components
 
 |Collection|Function|
 |----------|------|
-|[roles](https://galaxy.ansible.com/robertdebock/ansible-collection-roles)|All roles from [robertdebock.nl](https://robertdebock.nl)|
-|[development_environment](https://galaxy.ansible.com/robertdebock/development_environment)|A development environment.|
-|[rundeck_collection](https://galaxy.ansible.com/robertdebock/rundeck_collection)|Trying out a collection.|
+|[roles](https://galaxy.ansible.com/buluma/ansible-collection-roles)|All roles from [buluma.github.io](https://buluma.github.io)|
 
 ### [Github Actions](#github-actions)
 
@@ -259,34 +242,16 @@ Ansible tests are being executed using the following components
 |[docker-github-action-galaxy](https://github.com/robertdebock/docker-github-action-galaxy)|[![github action galaxy build status](https://img.shields.io/docker/cloud/build/robertdebock/github-action-galaxy.svg)](https://hub.docker.com/repository/docker/robertdebock/github-action-galaxy/)|
 |[docker-github-action-graphviz](https://github.com/robertdebock/docker-github-action-graphviz)|[![github action graphviz build status](https://img.shields.io/docker/cloud/build/robertdebock/github-action-graphviz.svg)](https://hub.docker.com/repository/docker/robertdebock/github-action-graphviz/)|
 
-### [Terraform modules](#terraform-modules)
-
-I maintain these Terraform modules
-
-|Module|State|
-|------|-----|
-|[azurerm_virtual_machine](https://registry.terraform.io/modules/robertdebock/virtual_machine/azurerm/latest)|[![.github/workflows/terraform.yml](https://github.com/robertdebock/terraform-azurerm-virtual_machine/actions/workflows/terraform.yml/badge.svg)](https://github.com/robertdebock/terraform-azurerm-virtual_machine)|
-|[digitalocean_ssh_key](https://registry.terraform.io/modules/robertdebock/ssh_key/digitalocean/latest)|[![.github/workflows/terraform.yml](https://github.com/robertdebock/terraform-digitalocean-ssh_key/workflows/.github/workflows/terraform.yml/badge.svg)](https://github.com/robertdebock/terraform-digitalocean-ssh_key/actions)|
-|[digitalocean_droplet](https://registry.terraform.io/modules/robertdebock/droplet/digitalocean/latest)|[![.github/workflows/terraform.yml](https://github.com/robertdebock/terraform-digitalocean-droplet/workflows/.github/workflows/terraform.yml/badge.svg)](https://github.com/robertdebock/terraform-digitalocean-droplet/actions)|
-|[digitalocean_vpc](https://registry.terraform.io/modules/robertdebock/vpc/digitalocean/latest)|[![.github/workflows/terraform.yml](https://github.com/robertdebock/terraform-digitalocean-vpc/workflows/.github/workflows/terraform.yml/badge.svg)](https://github.com/robertdebock/terraform-digitalocean-vpc/actions)|
-|[cloudflare_record](https://registry.terraform.io/modules/robertdebock/record/cloudflare/latest)|[![.github/workflows/terraform.yml](https://github.com/robertdebock/terraform-cloudflare-record/workflows/.github/workflows/terraform.yml/badge.svg)](https://github.com/robertdebock/terraform-cloudflare-record/actions)|
-|[azurerm_resource_group](https://registry.terraform.io/modules/robertdebock/azurerm_resource_group/azurerm/latest)|[![.github/workflows/terraform.yml](https://github.com/robertdebock/terraform-azurerm_resource_group/workflows/.github/workflows/terraform.yml/badge.svg)](https://github.com/robertdebock/terraform-azurerm_resource_group/actions)|
-|[azurerm_virtual_network](https://registry.terraform.io/modules/robertdebock/azurerm_virtual_network/azurerm/latest)|[![.github/workflows/terraform.yml](https://github.com/robertdebock/terraform-azurerm-azurerm_virtual_network/workflows/.github/workflows/terraform.yml/badge.svg)](https://github.com/robertdebock/terraform-azurerm-azurerm_virtual_network/actions)|
-|[azurerm_subnet](https://registry.terraform.io/modules/robertdebock/azurerm_subnet/azurerm/latest)|[![.github/workflows/terraform.yml](https://github.com/robertdebock/terraform-azurerm-azurerm_subnet/workflows/.github/workflows/terraform.yml/badge.svg)](https://github.com/robertdebock/terraform-azurerm-azurerm_subnet/actions)|
-|[azurerm_public_ip](https://registry.terraform.io/modules/robertdebock/azurerm_public_ip/azurerm/latest)|[![.github/workflows/terraform.yml](https://github.com/robertdebock/terraform-azurerm-azurerm_public_ip/workflows/.github/workflows/terraform.yml/badge.svg)](https://github.com/robertdebock/terraform-azurerm-azurerm_public_ip/actions)|
-|[azurerm_network_security_group](https://registry.terraform.io/modules/robertdebock/azurerm_network_security_group/azurerm/latest)|[![.github/workflows/terraform.yml](https://github.com/robertdebock/terraform-azurerm-azurerm_network_security_group/workflows/.github/workflows/terraform.yml/badge.svg)](https://github.com/robertdebock/terraform-azurerm-azurerm_network_security_group/actions)|
-|[azurerm_network_security_rule](https://registry.terraform.io/modules/robertdebock/azurerm_network_security_rule/azurerm/latest)|[![.github/workflows/terraform.yml](https://github.com/robertdebock/terraform-azurerm-azurerm_network_security_rule/workflows/.github/workflows/terraform.yml/badge.svg)](https://github.com/robertdebock/terraform-azurerm-azurerm_network_security_rule/actions)|
-
 ### [Other tools](#other-tools)
 
 I use a few tools to maintain the software I create.
 
 |Tool|Usage|
 |----|-----|
-|[ansible-generate](https://github.com/robertdebock/ansible-generator)|Generate lots of file for ansible roles based on a few input files.|
+|[ansible-generate](https://github.com/buluma/ansible-generator)|Generate lots of file for ansible roles based on a few input files.|
 |[ansible-probe](https://github.com/robertdebock/ansible-probe)|Test ansible roles on different distributions and version.|
 |[ansible-tester](https://github.com/robertdebock/ansible-tester)|Try roles against vagrant machines before pushing or releasing.|
-|[pre-commit](https://github.com/robertdebock/pre-commit)|Some pre-commit hooks to test Ansible code.|
+|[pre-commit](https://github.com/buluma/pre-commit)|Some pre-commit hooks to test Ansible code.|
 
 ## [Tests](#tests)
 
