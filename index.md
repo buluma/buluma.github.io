@@ -6,8 +6,8 @@ These [Ansible](https://www.ansible.com/) roles are [simple in style](style.html
 
 A monthly test to see of the role still works on the current distributions. Some roles contain a version that requires frequent changes and tests. To better understand what distributions and their versions are tested, have a look at the [relations](relations.html) page.
 
-|Role name|GitHub Action|GitLab CI|Version|
-|---------|-------------|---------|-------|
+|Role name|GitHub Action|GitLab CI|Version|Downloads|
+|---------|-------------|---------|-------|---------|
 |[aide](https://galaxy.ansible.com/buluma/aide)|[![github](https://github.com/buluma/ansible-role-aide/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-aide/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-aide/badges/main/pipeline.svg)](https://gitlab.com/buluma/ansible-role-aide)|[![version](https://img.shields.io/github/commits-since/buluma/ansible-role-aide/latest.svg)](https://github.com/buluma/ansible-role-aide/releases)|
 |[alternatives](https://galaxy.ansible.com/buluma/alternatives)|[![github](https://github.com/buluma/ansible-role-alternatives/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-alternatives/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-alternatives/badges/main/pipeline.svg)](https://gitlab.com/buluma/ansible-role-alternatives)|[![version](https://img.shields.io/github/commits-since/buluma/ansible-role-alternatives/latest.svg)](https://github.com/buluma/ansible-role-alternatives/releases)|
 |[anaconda](https://galaxy.ansible.com/buluma/anaconda)|[![github](https://github.com/buluma/ansible-role-anaconda/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-anaconda/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-anaconda/badges/main/pipeline.svg)](https://gitlab.com/buluma/ansible-role-anaconda)|[![version](https://img.shields.io/github/commits-since/buluma/ansible-role-anaconda/latest.svg)](https://github.com/buluma/ansible-role-anaconda/releases)|
