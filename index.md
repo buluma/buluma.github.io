@@ -167,7 +167,7 @@ Ansible tests are being executed using the following components
 |[Github Action Graphviz](https://github.com/marketplace/actions/mbu_requirements2png)|[![Yaml Lint](https://github.com/robertdebock/graphviz-action/actions/workflows/yamllint.yml/badge.svg)](https://github.com/robertdebock/graphviz-action/actions/workflows/yamllint.yml)|
 |[docker-github-action-molecule](https://github.com/buluma/docker-github-action-molecule)|[![github action molecule build status](https://img.shields.io/docker/cloud/build/buluma/github-action-molecule.svg)](https://hub.docker.com/repository/docker/buluma/github-action-molecule/)|
 |[docker-github-action-galaxy](https://github.com/buluma/docker-github-action-galaxy)|[![github action galaxy build status](https://img.shields.io/docker/cloud/build/buluma/github-action-galaxy.svg)](https://hub.docker.com/repository/docker/buluma/github-action-galaxy/)|
-|[docker-github-action-graphviz](https://github.com/buluma/docker-github-action-graphviz)|[![github action graphviz build status](https://img.shields.io/docker/cloud/build/buluma/github-action-graphviz.svg)](https://hub.docker.com/repository/docker/buluma/github-action-graphviz/)|
+|[docker-github-action-graphviz](https://github.com/buluma/docker-github-action-graphviz)|[![build-push](https://github.com/buluma/docker-github-action-graphviz/actions/workflows/build-push-action.yml/badge.svg)](https://github.com/buluma/docker-github-action-graphviz/actions/workflows/build-push-action.yml)|
 
 ### [Other tools](#other-tools)
 
