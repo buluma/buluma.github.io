@@ -161,14 +161,13 @@ Ansible tests are being executed using the following components
 
 |Component|Status|
 |---------|------|
-|[Github Action Molecule](https://github.com/marketplace/actions/test-ansible-roles-with-molecule)|[![Yaml Lint](https://github.com/robertdebock/molecule-action/workflows/Yaml%20Lint/badge.svg)](https://github.com/robertdebock/molecule-action)|
-|[Github Action Galaxy](https://github.com/marketplace/actions/publish-ansible-role-to-galaxy)|[![Yaml Lint](https://github.com/robertdebock/galaxy-action/workflows/Yaml%20Lint/badge.svg)](https://github.com/robertdebock/galaxy-action)|
+|[Github Action Molecule](https://github.com/marketplace/actions/buluma-molecule)|[![Yaml Lint](https://github.com/buluma/molecule-action/actions/workflows/yamllint.yml/badge.svg)](https://github.com/buluma/molecule-action/actions/workflows/yamllint.yml)|
+|[Github Action Galaxy](https://github.com/marketplace/actions/ansible-role-to-galaxy-publisher)|[![Yaml Lint](https://github.com/buluma/galaxy-action/actions/workflows/yamllint.yml/badge.svg)](https://github.com/buluma/galaxy-action/actions/workflows/yamllint.yml)|
 |[Github Action RPM build](https://github.com/marketplace/actions/build-an-rpm)|[![Yaml Lint](https://github.com/robertdebock/rpmbuild-action/workflows/Yaml%20Lint/badge.svg)](https://github.com/robertdebock/rpmbuild-action)|
-|[Github Action Terraform](https://github.com/marketplace/actions/test-or-run-terraform-code)|[![Yaml Lint](https://github.com/robertdebock/terraform-action/workflows/Yaml%20Lint/badge.svg)](https://github.com/robertdebock/terraform-action)|
-|[Github Action Graphviz](https://github.com/marketplace/actions/requirements2png)|[![Yaml Lint](https://github.com/robertdebock/graphviz-action/workflows/Yaml%20Lint/badge.svg)](https://github.com/robertdebock/graphviz-action)|
-|[docker-github-action-molecule](https://github.com/robertdebock/docker-github-action-molecule)|[![github action molecule build status](https://img.shields.io/docker/cloud/build/robertdebock/github-action-molecule.svg)](https://hub.docker.com/repository/docker/robertdebock/github-action-molecule/)|
-|[docker-github-action-galaxy](https://github.com/robertdebock/docker-github-action-galaxy)|[![github action galaxy build status](https://img.shields.io/docker/cloud/build/robertdebock/github-action-galaxy.svg)](https://hub.docker.com/repository/docker/robertdebock/github-action-galaxy/)|
-|[docker-github-action-graphviz](https://github.com/robertdebock/docker-github-action-graphviz)|[![github action graphviz build status](https://img.shields.io/docker/cloud/build/robertdebock/github-action-graphviz.svg)](https://hub.docker.com/repository/docker/robertdebock/github-action-graphviz/)|
+|[Github Action Graphviz](https://github.com/marketplace/actions/mbu_requirements2png)|[![Yaml Lint](https://github.com/robertdebock/graphviz-action/actions/workflows/yamllint.yml/badge.svg)](https://github.com/robertdebock/graphviz-action/actions/workflows/yamllint.yml)|
+|[docker-github-action-molecule](https://github.com/buluma/docker-github-action-molecule)|[![github action molecule build status](https://img.shields.io/docker/cloud/build/buluma/github-action-molecule.svg)](https://hub.docker.com/repository/docker/buluma/github-action-molecule/)|
+|[docker-github-action-galaxy](https://github.com/buluma/docker-github-action-galaxy)|[![github action galaxy build status](https://img.shields.io/docker/cloud/build/buluma/github-action-galaxy.svg)](https://hub.docker.com/repository/docker/buluma/github-action-galaxy/)|
+|[docker-github-action-graphviz](https://github.com/buluma/docker-github-action-graphviz)|[![github action graphviz build status](https://img.shields.io/docker/cloud/build/buluma/github-action-graphviz.svg)](https://hub.docker.com/repository/docker/buluma/github-action-graphviz/)|
 
 ### [Other tools](#other-tools)
 
