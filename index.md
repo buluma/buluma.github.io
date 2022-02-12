@@ -142,7 +142,7 @@ Ansible tests are being executed using the following components
 |Component|Build status|
 |---------|------------|
 |[docker-alpine-openrc](https://github.com/buluma/docker-alpine-openrc)|[![alpine build status](https://img.shields.io/docker/cloud/build/robertdebock/alpine.svg)](https://hub.docker.com/repository/docker/buluma/alpine-openrc)|
-|[docker-archlinux-systemd](https://github.com/buluma/docker-archlinux-systemd)|[![fedora build status](https://img.shields.io/docker/cloud/build/buluma/archlinux.svg)](https://hub.docker.com/repository/docker/buluma/archlinux)|
+|[docker-archlinux-systemd](https://github.com/buluma/docker-archlinux-systemd)|[![docker build](https://github.com/buluma/docker-archlinux-systemd/actions/workflows/docker-build.yml/badge.svg?branch=master)](https://hub.docker.com/repository/docker/buluma/archlinux)|
 |[docker-amazonlinux-systemd](https://github.com/buluma/amazonlinux)|[![amazonlinux build status](https://img.shields.io/docker/cloud/build/robertdebock/amazonlinux.svg)](https://hub.docker.com/repository/docker/buluma/amazonlinux)|
 |[docker-centos-systemd](https://github.com/buluma/centos-systemd)|[![centos build status](https://img.shields.io/docker/cloud/build/robertdebock/centos.svg)](https://hub.docker.com/repository/docker/buluma/centos-systemd)|
 |[docker-debian-systemd](https://github.com/buluma/debian-systemd)|[![debian build status](https://img.shields.io/docker/cloud/build/robertdebock/debian.svg)](https://hub.docker.com/repository/docker/buluma/debian-systemd)|
