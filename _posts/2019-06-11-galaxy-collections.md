@@ -37,7 +37,7 @@ description: Install everything you need to develop Ansible roles.
 version: "1.0.4"
 readme: "README.md"
 authors:
-    - "Robert de Bock"
+    - "Michael Buluma"
 dependencies:
 license:
     - "Apache-2.0"

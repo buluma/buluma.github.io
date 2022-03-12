@@ -14,7 +14,7 @@ The [classic](https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse
 ---
 - name: Build a machine
   hosts: all
-  
+
   roles:
     - buluma.bootstrap
     - buluma.java
@@ -28,7 +28,7 @@ Or a variation that allows per-role variables:
 ---
 - name: Build a machine
   hosts: all
-  
+
   roles:
     - role: buluma.bootstrap
     - role: buluma.java
@@ -38,14 +38,13 @@ Or a variation that allows per-role variables:
 
 ### Include role
 
-<!-- TODO: Change to local -->
 The [include_role](https://docs.ansible.com/ansible/latest/modules/include_role_module.html) way:
 
 ```yaml
 ---
 - name: Build a machine
   hosts: all
-  
+
   tasks:
     - name: include bootstrap
       include_role:
@@ -67,7 +66,7 @@ Or a [with_items](https://docs.ansible.com/ansible/latest/user_guide/playbooks_l
 ---
 - name: Build a machine
   hosts: all
-  
+
   tasks:
     - name: include role
       include_role:

@@ -14,4 +14,4 @@ I specialize in infrastructural development practices, which include:
 
 Please find projects I use on [GitHub](https://github.com/buluma/).
 
-<!-- ![Robert de Bock](https://live.staticflickr.com/4488/23646152528_f3e502e606_w_d.jpg "Robert de Bock") -->
+<!-- ![Michael Buluma](https://live.staticflickr.com/4488/23646152528_f3e502e606_w_d.jpg "Michael Buluma") -->
