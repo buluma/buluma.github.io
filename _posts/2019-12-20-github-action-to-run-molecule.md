@@ -30,7 +30,7 @@ jobs:
         with:
           path: "${{ github.repository }}"
       - name: molecule
-        uses: robertdebock/molecule-action@master
+        uses: buluma/molecule-action@master
 ```
 
 ## How it works
@@ -42,8 +42,8 @@ You may want to write your own action, here is an overview of the required compo
 | - .github/workflows/molecule.yml      |
 +-+-------------------------------------+
   |
-  |    +-------- robertdebock/molecule-action --------+
-  +--> | - image: robertdebock/github-action-molecule |
+  |    +-------- buluma/molecule-action --------+
+  +--> | - image: buluma/github-action-molecule |
        +-+--------------------------------------------+
          |
          |    +--- github-action-molecule ---+
@@ -54,11 +54,11 @@ You may want to write your own action, here is an overview of the required compo
 
 ### 1. Create a container
 <!-- TODO: change to local -->
-First create a container that has all tools installed you need and push it to [Docker Hub](https://hub.docker.com/repository/docker/robertdebock/github-action-molecule/). Here is the [code for my container](https://github.com/robertdebock/docker-github-action-molecule)
+First create a container that has all tools installed you need and push it to [Docker Hub](https://hub.docker.com/repository/docker/buluma/github-action-molecule/). Here is the [code for my container](https://github.com/buluma/docker-github-action-molecule)
 
 ### 2. Create an action
 <!-- TODO: change to local -->
-Create a [GitHub repository per action](https://github.com/robertdebock/molecule-action). It should at least contain an `action.yml`. Have a look at [the documentation for Actions](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/building-actions).
+Create a [GitHub repository per action](https://github.com/buluma/molecule-action). It should at least contain an `action.yml`. Have a look at [the documentation for Actions](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/building-actions).
 
 ### 3. Integrate your action
 
@@ -71,11 +71,11 @@ Pick a repository, and add a file (likely with the name of the action) in `.gitl
         with:
           path: "${{ github.repository }}"
       - name: molecule
-        uses: robertdebock/molecule-action@master
+        uses: buluma/molecule-action@master
         with:
           image: ${{ matrix.image }}
 ```
 <!-- TODO: change to local -->
-[A full example here](https://github.com/robertdebock/ansible-role-squid/blob/master/.github/workflows/molecule.yml).
+[A full example here](https://github.com/buluma/ansible-role-squid/blob/master/.github/workflows/molecule.yml).
 
 The benefit is that you (or others) can reuse the action. Have fun making GitHub actions!

@@ -40,13 +40,13 @@ Take a look at this example:
   gather_facts: no
 
   roles:
-    - robertdebock.bootstrap
-    - robertdebock.update
-    - robertdebock.common
-    - robertdebock.python_pip
-    - robertdebock.php
-    - robertdebock.mysql
-    - robertdebock.phpmyadmin
+    - buluma.bootstrap
+    - buluma.update
+    - buluma.common
+    - buluma.python_pip
+    - buluma.php
+    - buluma.mysql
+    - buluma.phpmyadmin
 ```
 
 This code is simple to read, anybody could have an understanding what it does.

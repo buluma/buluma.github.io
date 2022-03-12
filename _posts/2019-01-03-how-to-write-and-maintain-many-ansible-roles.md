@@ -19,7 +19,7 @@ ansible-galaxy init --role-skeleton=ansible-role-skeleton role_name
 To explain what happens:
 - `ansible-galaxy` is a command. This may change to `molecule` in the future.
 - `init` tells ansible-galaxy to initialize a new role.
-- `--role-skeleton=ansible-role-skeleton` refers to a skeleton ansible role. I use [his repository](https://github.com/robertdebock/ansible-role-skeleton).
+- `--role-skeleton=ansible-role-skeleton` refers to a skeleton ansible role. I use [his repository](https://github.com/buluma/ansible-role-skeleton).
 - `role_name` is the name of your new role. I use short names here, like `nginx` or `postfix`.
 
 ## Use ansible-lint for quick feedback
@@ -28,9 +28,9 @@ To explain what happens:
 
 There are times where [I don't agree](https://github.com/ansible/ansible-lint/pull/409) to the rules, but the feedback is quickly processed.A
 
-There are also times where I initially think rules are useless, but after a while [I'm convinced about the intent](https://robertdebock.nl/2018/11/01/lines-should-be-no-longer-than-120-chars.html) and change my code.
+There are also times where I initially think rules are useless, but after a while [I'm convinced about the intent](https://buluma.nl/2018/11/01/lines-should-be-no-longer-than-120-chars.html) and change my code.
 
-You can also [describe your preferences](https://github.com/robertdebock/ansible-lint-rules) and use ansible-lint to verify you code. Great for teams that need to agree on a style.
+You can also [describe your preferences](https://github.com/buluma/ansible-lint-rules) and use ansible-lint to verify you code. Great for teams that need to agree on a style.
 
 ## Use molecule on Travis to test
 
@@ -52,9 +52,9 @@ You can play as much as you want in between releases, but when a release is done
 
 ### Go forth and develop!
 
-You can setup a machine yourself for developing Ansible roles. I've [prepared a repository](https://github.com/robertdebock/ansible-development-environment) that may help.
+You can setup a machine yourself for developing Ansible roles. I've [prepared a repository](https://github.com/buluma/ansible-development-environment) that may help.
 
-The playbook in [that repository](https://github.com/robertdebock/ansible-development-environment) looks something like this:
+The playbook in [that repository](https://github.com/buluma/ansible-development-environment) looks something like this:
 
 ```yaml
 ---
@@ -64,23 +64,23 @@ The playbook in [that repository](https://github.com/robertdebock/ansible-develo
   gather_facts: no
 
   roles:
-    - robertdebock.bootstrap
-    - robertdebock.update
-    - robertdebock.fail2ban
-    - robertdebock.openssh
-    - robertdebock.digitalocean_agent
-    - robertdebock.common
-    - robertdebock.users
-    - robertdebock.postfix
-    - robertdebock.docker
-    - robertdebock.investigate
-    - robertdebock.ansible
-    - robertdebock.ansible_lint
-    - robertdebock.buildtools
-    - robertdebock.molecule
-    - robertdebock.ara
-    - robertdebock.ruby
-    - robertdebock.travis
+    - buluma.bootstrap
+    - buluma.update
+    - buluma.fail2ban
+    - buluma.openssh
+    - buluma.digitalocean_agent
+    - buluma.common
+    - buluma.users
+    - buluma.postfix
+    - buluma.docker
+    - buluma.investigate
+    - buluma.ansible
+    - buluma.ansible_lint
+    - buluma.buildtools
+    - buluma.molecule
+    - buluma.ara
+    - buluma.ruby
+    - buluma.travis
 
   tasks:
     - name: copy private key

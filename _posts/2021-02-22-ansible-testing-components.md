@@ -33,11 +33,11 @@ To test Ansible, I use quite a number of components. This page lists the compone
 
 [c]: https://img.shields.io/pypi/v/molecule
 [e]: https://img.shields.io/github/v/release/ansible-community/ansible-lint
-[g]: https://img.shields.io/github/v/release/robertdebock/molecule-action
-[h]: https://img.shields.io/github/v/release/robertdebock/docker-github-action-molecule
-[m]: https://img.shields.io/github/v/release/robertdebock/galaxy-action
-[n]: https://img.shields.io/github/v/release/robertdebock/graphviz-action
+[g]: https://img.shields.io/github/v/release/buluma/molecule-action
+[h]: https://img.shields.io/github/v/release/buluma/docker-github-action-molecule
+[m]: https://img.shields.io/github/v/release/buluma/galaxy-action
+[n]: https://img.shields.io/github/v/release/buluma/graphviz-action
 [o]: https://img.shields.io/github/v/release/actions/checkout
 [p]: https://img.shields.io/github/v/release/alstr/todo-to-issue-action
 [r]: https://img.shields.io/github/v/release/pre-commit/pre-commit-hooks
-[u]: https://img.shields.io/github/v/release/robertdebock/pre-commit
+[u]: https://img.shields.io/github/v/release/buluma/pre-commit

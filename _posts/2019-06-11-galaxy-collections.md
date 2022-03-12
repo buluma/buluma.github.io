@@ -10,7 +10,7 @@ As [the documentation](https://galaxy.ansible.com/docs/mazer/examples.html) desc
 Collections are a new way to package and distribute Ansible related content.
 ```
 
-I write [a lot of roles](https://robertdebock.nl/), roles are nice, but it's a bit like ingredients without a recipe: A role is only a part of the whole picture.
+I write [a lot of roles](https://buluma.nl/), roles are nice, but it's a bit like ingredients without a recipe: A role is only a part of the whole picture.
 
 Collections allow you to package:
 - roles
@@ -25,7 +25,7 @@ So instead of [upstreaming](https://en.wikipedia.org/wiki/Upstream_(software_dev
 The whole process is [documented](https://galaxy.ansible.com/docs/contributing/creating_collections.html) and should not be difficult.
 
 <!-- #TODO -->
-I've published my [development_environment](https://github.com/robertdebock/ansible-development-environment) and only had to change these things:
+I've published my [development_environment](https://github.com/buluma/ansible-development-environment) and only had to change these things:
 
 ## 1. Add galaxy.yml
 <!-- #TODO -->
@@ -45,10 +45,10 @@ tags:
     - development
     - molecule
     - ara
-repository: "https://github.com/robertdebock/ansible-development-environment"
-documentation: "https://github.com/robertdebock/ansible-development-environment/blob/master/README.md"
-homepage: "https://robertdebock.nl"
-issues: "https://github.com/robertdebock/ansible-development-environment/issues"
+repository: "https://github.com/buluma/ansible-development-environment"
+documentation: "https://github.com/buluma/ansible-development-environment/blob/master/README.md"
+homepage: "https://buluma.nl"
+issues: "https://github.com/buluma/ansible-development-environment/issues"
 ```
 
 ## 2. Enable Travis for the repository

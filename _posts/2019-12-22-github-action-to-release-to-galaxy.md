@@ -28,7 +28,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
       - name: galaxy
-        uses: robertdebock/galaxy-action@master
+        uses: buluma/galaxy-action@master
         with:
           galaxy_api_key: "${{ secrets.galaxy_api_key }}"
 ```
@@ -51,7 +51,7 @@ jobs:
         with:
           path: "${{ github.repository }}"
       - name: molecule
-        uses: robertdebock/molecule-action@1.0.0
+        uses: buluma/molecule-action@1.0.0
         with:
           image: "${{ matrix.image }}"
   release:
@@ -60,7 +60,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: galaxy
-        uses: robertdebock/galaxy-action@master
+        uses: buluma/galaxy-action@master
         with:
           galaxy_api_key: ${{ secrets.galaxy_api_key }}
 ```
@@ -96,7 +96,7 @@ jobs:
         with:
           path: "${{ github.repository }}"
       - name: molecule
-        uses: robertdebock/molecule-action@1.0.0
+        uses: buluma/molecule-action@1.0.0
         with:
           image: ${{ matrix.image }}
   release:
@@ -105,7 +105,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: galaxy
-        uses: robertdebock/galaxy-action@master
+        uses: buluma/galaxy-action@master
         with:
           galaxy_api_key: ${{ secrets.galaxy_api_key }}
 ```
@@ -113,4 +113,4 @@ jobs:
 Now your role is tested on the list of `images` specified.
 
 <!-- #TODO; update to local -->
-Hope these actions make it easier to develop, test and release your roles, if you find problems, please make an issue for either the [molecule](https://github.com/robertdebock/molecule-action/issues) or [galaxy](https://github.com/robertdebock/galaxy-action/issues) action.
+Hope these actions make it easier to develop, test and release your roles, if you find problems, please make an issue for either the [molecule](https://github.com/buluma/molecule-action/issues) or [galaxy](https://github.com/buluma/galaxy-action/issues) action.

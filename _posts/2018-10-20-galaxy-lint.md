@@ -14,7 +14,7 @@ The [Galaxy team](https://github.com/ansible/galaxy/graphs/contributors) has dec
 - Score (using [Ansible Lint](https://github.com/willthames/ansible-lint))
 - Feedback
 
-The rules are stored in [galaxy-lint-roles](https://github.com/ansible/galaxy-lint-rules). So far [Andrew](https://github.com/awcrosby), [House](https://github.com/chouseknecht) and [Robert](https://github.com/robertdebock) have contributed, feel free to propose new rules or improvements!
+The rules are stored in [galaxy-lint-roles](https://github.com/ansible/galaxy-lint-rules). So far [Andrew](https://github.com/awcrosby), [House](https://github.com/chouseknecht) and [Robert](https://github.com/buluma) have contributed, feel free to propose new rules or improvements!
 
 You can prepare your roles:
 ```

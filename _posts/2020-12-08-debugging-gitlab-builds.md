@@ -4,7 +4,7 @@ title: Debugging GitLab builds
 
 # Debugging GitLab builds
 
-Now that [Travis has become unusable](https://blog.travis-ci.com/2020-11-02-travis-ci-new-billing), I'm moving stuff to [GitLab](https://gitlab.com/robertdebock). Some builds are breaking, this is how to reproduce the errors.
+Now that [Travis has become unusable](https://blog.travis-ci.com/2020-11-02-travis-ci-new-billing), I'm moving stuff to [GitLab](https://gitlab.com/buluma). Some builds are breaking, this is how to reproduce the errors.
 
 ## Start the `dind` container
 

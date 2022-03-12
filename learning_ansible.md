@@ -132,10 +132,10 @@ That's a perfect opportunity to write a `role`. A role is basically a list of ta
   gather_facts: yes
 
   roles:
-    - role: robertdebock.ntp
+    - role: buluma.ntp
 ```
 
-The role itself has a few files and directories. This is a simplified version of my [ntp role](https://github.com/robertdebock/ansible-role-ntp).
+The role itself has a few files and directories. This is a simplified version of my [ntp role](https://github.com/buluma/ansible-role-ntp).
 
 ```
 .
@@ -259,7 +259,7 @@ A playbook is a list of [tasks](#tasks) and [roles](#roles) and some details to 
         msg: "Hello world"
 
   roles:
-    - role: robertdebock.ntp
+    - role: buluma.ntp
 ```
 
 There are a few parameters that need explaining:

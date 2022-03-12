@@ -16,9 +16,9 @@ The [classic](https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse
   hosts: all
   
   roles:
-    - robertdebock.bootstrap
-    - robertdebock.java
-    - robertdebock.tomcat
+    - buluma.bootstrap
+    - buluma.java
+    - buluma.tomcat
 ```
 
 Or a variation that allows per-role variables:
@@ -30,10 +30,10 @@ Or a variation that allows per-role variables:
   hosts: all
   
   roles:
-    - role: robertdebock.bootstrap
-    - role: robertdebock.java
+    - role: buluma.bootstrap
+    - role: buluma.java
       vars: java_version: 9
-    - role: robertdebock.tomcat
+    - role: buluma.tomcat
 ```
 
 ### Include role
@@ -49,15 +49,15 @@ The [include_role](https://docs.ansible.com/ansible/latest/modules/include_role_
   tasks:
     - name: include bootstrap
       include_role:
-        name: robertdebock.bootstrap
+        name: buluma.bootstrap
 
     - name: include java
       include_role:
-        name: robertdebock.java
+        name: buluma.java
 
     - name: include tomcat
       include_role:
-        name: robertdebock.tomcat
+        name: buluma.tomcat
 ```
 
 Or a [with_items](https://docs.ansible.com/ansible/latest/user_guide/playbooks_loops.html) (since [Ansible 2.3](https://github.com/ansible/ansible/issues/17966)) variation:
@@ -73,9 +73,9 @@ Or a [with_items](https://docs.ansible.com/ansible/latest/user_guide/playbooks_l
       include_role:
         name: "{{ item }}"
       with_items:
-        - robertdebock.bootstrap
-        - robertdebock.java
-        - robertdebock.tomcat
+        - buluma.bootstrap
+        - buluma.java
+        - buluma.tomcat
 ```
 
 Sometimes it can be required to call one role from another role. I'd personally use import_role like this:
@@ -98,19 +98,19 @@ variable_x_for_role_name: foo
 variable_y_for_role_name: bar
 ```
 
-A real life example is my [robertdebock.artifactory](https://galaxy.ansible.com/robertdebock/artifactory) role calls [robertdebock.service](https://galaxy.ansible.com/robertdebock/service) role to add a service.
-The code for [the artifactory role](https://github.com/robertdebock/ansible-role-artifactory/blob/master/tasks/main.yml) contains:
+A real life example is my [buluma.artifactory](https://galaxy.ansible.com/buluma/artifactory) role calls [buluma.service](https://galaxy.ansible.com/buluma/service) role to add a service.
+The code for [the artifactory role](https://github.com/buluma/ansible-role-artifactory/blob/master/tasks/main.yml) contains:
 <!-- TODO: Change to local -->
 
 ```yaml
 # snippet
 - name: create artifactory service
   import_role:
-    name: robertdebock.service
+    name: buluma.service
 # endsnippet
 ```
 
-and the variable are set in `[vars/main.yml](https://github.com/robertdebock/ansible-role-artifactory/blob/master/vars/main.yml)` contains:
+and the variable are set in `[vars/main.yml](https://github.com/buluma/ansible-role-artifactory/blob/master/vars/main.yml)` contains:
 
 ```yaml
 service_list:
