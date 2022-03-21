@@ -100,7 +100,7 @@ A monthly test to see of the role still works on the current distributions. Some
 
 Most roles have a "soft dependency" described in `requirements.yml`. You can choose to use those roles if you like them. Here is an overview of these soft dependencies.
 
-[![Overview of dependencies](https://raw.githubusercontent.com/buluma/drawings/artifacts/dependencies.png "Dependency overview")](https://raw.githubusercontent.com/buluma/drawings/artifacts/dependencies.png)
+<!-- [![Overview of dependencies](https://raw.githubusercontent.com/buluma/drawings/artifacts/dependencies.png "Dependency overview")](https://raw.githubusercontent.com/buluma/drawings/artifacts/dependencies.png) -->
 
 The dependencies are soft for these reasons:
 - Better re-usability.
@@ -137,9 +137,9 @@ Some roles have a hard dependencies on another role, mainly for a shared handler
 | [update](https://galaxy.ansible.com/buluma/update/) | [reboot](https://galaxy.ansible.com/buluma/reboot/) | A reboot is used in `tasks/main.yml` with `include_role`. |
 | [zabbix](https://galaxy.ansible.com/buluma/zabbix/) | [httpd](https://galaxy.ansible.com/buluma/httpd/) | handler & inherited variable |
 
-Here is an overview of the hard dependencies:
+<!-- Here is an overview of the hard dependencies:
 
-[![Overview of hard dependencies](https://raw.githubusercontent.com/buluma/drawings/artifacts/hard-dependencies.png "Hard dependency overview")](https://raw.githubusercontent.com/buluma/drawings/artifacts/hard-dependencies.png)
+[![Overview of hard dependencies](https://raw.githubusercontent.com/buluma/drawings/artifacts/hard-dependencies.png "Hard dependency overview")](https://raw.githubusercontent.com/buluma/drawings/artifacts/hard-dependencies.png) -->
 
 A page [describing how I release](dependencies.html) considering these dependencies.
 
