@@ -211,7 +211,7 @@ The goal is to let all Ansible roles work on as many distributions as possible, 
 | CentOS       | 7 & latest               |
 | Debian       | stable & unstable*       |
 | Fedora       | latest & rawhide*        |
-| OpenSUSE     | leap & tumbleweed        | 
+| OpenSUSE     | leap & tumbleweed        |
 | Ubuntu       | latest, devel* & rolling |
 
 * = These are experimental, builds are done for informative purposes and may fail.
@@ -220,6 +220,9 @@ The goal is to let all Ansible roles work on as many distributions as possible, 
 The goal is to let all roles work on these Ansible version:
 - 2.8
 - 2.9
+- 2.10
+- 2.11
+- 2.12
 - devel (which is allowed to fail)
 
 See errors? Please help and [make a merge request on git](https://github.com/buluma/buluma.github.io/).
