@@ -141,7 +141,7 @@ Some roles have a hard dependencies on another role, mainly for a shared handler
 | [zabbix](https://galaxy.ansible.com/buluma/zabbix/) | [httpd](https://galaxy.ansible.com/buluma/httpd/) | handler & inherited variable |
 
 <!-- Here is an overview of the hard dependencies:
-
+tumbleweed
 [![Overview of hard dependencies](https://raw.githubusercontent.com/buluma/drawings/artifacts/hard-dependencies.png "Hard dependency overview")](https://raw.githubusercontent.com/buluma/drawings/artifacts/hard-dependencies.png) -->
 
 A page [describing how I release](dependencies.html) considering these dependencies.
