@@ -217,7 +217,7 @@ galaxy_info:
   role_name: ntp
   description: Install and configure ntp on your system.
   license: Apache-2.0
-  company: none
+  company: ShadowNet
   min_ansible_version: 2.8
 
   platforms:
