@@ -3,7 +3,6 @@ If you want to request me to present on of the topics below, please let me know:
 ```yaml
 - name: Michael Buluma
   email: me@buluma.me.ke
-  phone: +254-777-209954
 ```
 
 - [Ansible Roles](/presentations/ansible-roles/)
