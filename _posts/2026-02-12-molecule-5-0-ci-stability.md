@@ -4,15 +4,15 @@ title: Molecule 5.0 makes CI more stable for roles
 
 # Molecule 5.0 makes CI more stable for roles
 
-If you run Molecule in CI, the last six months have brought improvements that make pipelines more stable. Molecule 5.0 reduces surprises around driver behavior and keeps scenarios more consistent across environments. citeturn5view2
+If you run Molecule in CI, the last six months have brought improvements that make pipelines more stable. Molecule 5.0 reduces surprises around driver behavior and keeps scenarios more consistent across environments.
 
 ## What changed
 
 ### Cleaner defaults
-Molecule 5.0 is more opinionated about defaults, which reduces the need for custom glue in every repo. That makes CI definitions smaller and easier to maintain. citeturn5view2
+Molecule 5.0 is more opinionated about defaults, which reduces the need for custom glue in every repo. That makes CI definitions smaller and easier to maintain.
 
 ### Better multi‑driver reliability
-For teams that test on more than one platform, consistency across drivers is the most noticeable improvement. Fewer driver‑specific hacks are needed. citeturn5view2
+For teams that test on more than one platform, consistency across drivers is the most noticeable improvement. Fewer driver‑specific hacks are needed.
 
 ## Why it helps fellow developers
 
