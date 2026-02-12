@@ -6,6 +6,20 @@ This repository contains the content for the Buluma site, including:
 - Documentation
 - Ansible role index (`index.md`)
 
+## Documentation
+
+Comprehensive documentation for this repository is available in the `docs/` directory:
+
+- **README.md**: Project overview and structure
+- **project-overview.md**: Detailed project goals and roadmap
+- **code-standards.md**: Coding standards for Markdown, HTML, CSS, and JavaScript
+- **codebase-summary.md**: Technical overview of the codebase
+- **system-architecture.md**: Architecture diagram and component details
+- **deployment-guide.md**: Instructions for deploying and maintaining the site
+- **design-guidelines.md**: Visual identity and UX guidelines
+- **api-reference.md**: Reference for external APIs and Jekyll features
+- **summary.md**: Summary of the entire documentation suite
+
 ## Writing posts
 
 Add new posts in `_posts/` using the `YYYY-MM-DD-title.md` format and include a front‑matter title.
