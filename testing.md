@@ -1,3 +1,8 @@
+---
+layout: default
+title: [Tests](#tests)
+---
+
 # [Tests](#tests)
 
 The filosofy to test is:

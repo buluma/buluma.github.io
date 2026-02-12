@@ -1,6 +1,13 @@
 ---
 title: Galaxy will score your roles
+author: buluma
+categories:
+  - ansible
+  - collections
+  - roles
 ---
+
+
 
 # Ansible Galaxy Lint
 

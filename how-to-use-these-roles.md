@@ -1,3 +1,8 @@
+---
+layout: default
+title: How To Use These Roles
+---
+
 ## [How to use these roles](#how-to-use-these-roles)
 
 There is [quite](https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html) [some](https://docs.ansible.com/ansible/latest/user_guide/playbooks.html) [documentation](https://docs.ansible.com/ansible/latest/user_guide/playbooks_intro.html) available already, but it wouldn't hurt to briefly explain how to use these roles.

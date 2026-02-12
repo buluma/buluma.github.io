@@ -1,6 +1,15 @@
 ---
 title: Molecule 5.0 and the driver future
+author: buluma
+categories:
+  - molecule
+  - ci-cd
+  - testing
+  - best-practices
+  - roles
 ---
+
+
 
 # Molecule 5.0 and the driver future
 

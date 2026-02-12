@@ -1,3 +1,8 @@
+---
+layout: default
+title: [Learning Ansible](#learning-ansible)
+---
+
 # [Learning Ansible](#learning-ansible)
 
 This is an as-short-as-possible walk through to learn Ansible. It should help you get going as quick as possible.

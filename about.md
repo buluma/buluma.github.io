@@ -1,3 +1,8 @@
+---
+layout: default
+title: About
+---
+
 # About
 
 My name is Michael Buluma, a creative nerd that appreciates open source.

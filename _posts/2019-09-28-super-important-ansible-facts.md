@@ -1,6 +1,11 @@
 ---
 title: Super important Ansible facts
+author: buluma
+categories:
+  - ansible
 ---
+
+
 
 # Super important Ansible facts
 

@@ -1,6 +1,16 @@
 ---
 title: How to write and maintain many Ansible roles
+author: buluma
+categories:
+  - ansible
+  - molecule
+  - testing
+  - collections
+  - best-practices
+  - roles
 ---
+
+
 
 # How to write and maintain many Ansible roles
 

@@ -1,3 +1,8 @@
+---
+layout: default
+title: [Tox, Molecule and Travis](#tox-molecule-and-travis)
+---
+
 # [Tox, Molecule and Travis](#tox-molecule-and-travis)
 
 Testing uses a few tools to reduce the amount of code/lines and thus reduces the amount of errors. Because this increases complexity, this page described how the three work together.

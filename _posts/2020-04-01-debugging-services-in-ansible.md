@@ -1,6 +1,12 @@
 ---
 title: Debugging services in Ansible
+author: buluma
+categories:
+  - ansible
+  - testing
 ---
+
+
 
 # Debugging services in Ansible
 

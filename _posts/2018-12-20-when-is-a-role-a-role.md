@@ -1,6 +1,14 @@
 ---
 title: When is a role a role
+author: buluma
+categories:
+  - ansible
+  - testing
+  - best-practices
+  - roles
 ---
+
+
 
 # When is a role a role
 

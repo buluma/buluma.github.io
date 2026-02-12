@@ -1,3 +1,8 @@
+---
+layout: default
+title: Docker_Builds
+---
+
 ## [Docker builds](#docker-builds)
 
 Docker tests are being executed using the following components

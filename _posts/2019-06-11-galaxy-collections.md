@@ -1,6 +1,15 @@
 ---
 title: Ansible Galaxy Collections are here!
+author: buluma
+categories:
+  - ansible
+  - molecule
+  - testing
+  - collections
+  - roles
 ---
+
+
 
 # Ansible Galaxy Collections are here!
 

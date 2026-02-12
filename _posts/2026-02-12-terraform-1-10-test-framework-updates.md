@@ -1,6 +1,14 @@
 ---
 title: Terraform test improvements in 1.10 for everyday modules
+author: buluma
+categories:
+  - terraform
+  - ci-cd
+  - testing
+  - best-practices
 ---
+
+
 
 # Terraform test improvements in 1.10 for everyday modules
 

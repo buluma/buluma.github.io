@@ -1,3 +1,8 @@
+---
+layout: default
+title: [My Manifesto](#my-manifesto)
+---
+
 # [My Manifesto](#my-manifesto)
 
 To keep a sharp eye on what is "right" in software development, here are a few rules I agree with.

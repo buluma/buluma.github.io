@@ -1,6 +1,15 @@
 ---
 title: How many modules do you need?
+author: buluma
+categories:
+  - ansible
+  - testing
+  - collections
+  - best-practices
+  - roles
 ---
+
+
 
 # How many modules do you need?
 
@@ -9,7 +18,7 @@ title: How many modules do you need?
 Anyway, let's get some stats:
 
 # How many modules am I using?
-<!-- TODO: find actual amount -->
+(Content needs verification)
 That was not so difficult to estimate: **97 modules**.
 
 # What 'weird' modules?

@@ -1,6 +1,16 @@
 ---
 title: GitHub action to release to Galaxy
+author: buluma
+categories:
+  - ansible
+  - molecule
+  - ci-cd
+  - testing
+  - collections
+  - roles
 ---
+
+
 
 # GitHub action to release to Galaxy
 

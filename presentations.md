@@ -1,3 +1,8 @@
+---
+layout: default
+title: Presentations
+---
+
 If you want to request me to present on of the topics below, please let me know:
 
 ```yaml

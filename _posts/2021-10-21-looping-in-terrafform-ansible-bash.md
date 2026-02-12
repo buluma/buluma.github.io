@@ -1,6 +1,13 @@
 ---
 title: Looping in Terraform, Ansible and Bash
+author: buluma
+categories:
+  - ansible
+  - terraform
+  - testing
 ---
+
+
 
 # Looping in Terraform, Ansible and Bash
 

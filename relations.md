@@ -1,3 +1,8 @@
+---
+layout: default
+title: [Distribution relations](#distribution-relations)
+---
+
 # [Distribution relations](#distribution-relations)
 
 There is a relation between:

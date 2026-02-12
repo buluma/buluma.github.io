@@ -1,6 +1,11 @@
 ---
 title: YAML Anchors and References
+author: buluma
+categories:
+  - general
 ---
+
+
 
 # YAML Anchors and References
 

@@ -1,6 +1,14 @@
 ---
 title: Lines should be no longer than 120 chars
+author: buluma
+categories:
+  - ansible
+  - testing
+  - collections
+  - roles
 ---
+
+
 
 # [204] Lines should be no longer than 120 chars
 

@@ -1,6 +1,14 @@
 ---
 title: Ansible on Fedora 30
+author: buluma
+categories:
+  - ansible
+  - testing
+  - collections
+  - roles
 ---
+
+
 
 # Ansible on Fedora 30.
 

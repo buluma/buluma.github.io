@@ -1,6 +1,14 @@
 ---
 title: Fedora 30 and above use python-3
+author: buluma
+categories:
+  - ansible
+  - molecule
+  - testing
+  - roles
 ---
+
+
 
 # Fedora 30 and above use python-3
 

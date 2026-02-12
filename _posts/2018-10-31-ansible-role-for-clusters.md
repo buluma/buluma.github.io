@@ -1,6 +1,12 @@
 ---
 title: Ansible roles for clusters
+author: buluma
+categories:
+  - ansible
+  - roles
 ---
+
+
 
 # Ansible roles for clusters
 

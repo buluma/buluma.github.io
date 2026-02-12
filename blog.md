@@ -1,3 +1,8 @@
+---
+layout: default
+title: Blog
+---
+
 An overview of articles
 <ul>
   {% for post in site.posts %}

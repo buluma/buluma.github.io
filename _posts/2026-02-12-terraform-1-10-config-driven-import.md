@@ -1,6 +1,15 @@
 ---
 title: Terraform 1.10 config-driven import and why it matters
+author: buluma
+categories:
+  - terraform
+  - ci-cd
+  - testing
+  - best-practices
+  - devops
 ---
+
+
 
 # Terraform 1.10 config-driven import and why it matters
 

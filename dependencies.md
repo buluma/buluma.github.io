@@ -1,3 +1,8 @@
+---
+layout: default
+title: [Dependencies](#dependencies)
+---
+
 # [Dependencies](#dependencies)
 
 Some roles depend on other roles. This post is more of a reminder to myself on ordering a big change to all roles.

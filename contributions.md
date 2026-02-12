@@ -1,3 +1,8 @@
+---
+layout: default
+title: Contributions
+---
+
 ## Ansible roles contributions status
 
 Here is an overview of all issues and pull requests per role.

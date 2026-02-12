@@ -1,6 +1,15 @@
 ---
 title: Ansible Fest Atlanta 2019
+author: buluma
+categories:
+  - ansible
+  - molecule
+  - testing
+  - collections
+  - roles
 ---
+
+
 
 # Ansible Fest Atlanta 2019
 

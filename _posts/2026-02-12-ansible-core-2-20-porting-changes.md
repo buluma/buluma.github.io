@@ -1,6 +1,17 @@
 ---
 title: ansible-core 2.20 porting changes that matter in daily playbooks
+author: buluma
+categories:
+  - ansible
+  - ci-cd
+  - testing
+  - collections
+  - best-practices
+  - roles
+  - devops
 ---
+
+
 
 # ansible-core 2.20 porting changes that matter in daily playbooks
 

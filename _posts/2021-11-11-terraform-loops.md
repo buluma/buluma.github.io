@@ -1,6 +1,11 @@
 ---
 title: Terraform loops
+author: buluma
+categories:
+  - terraform
 ---
+
+
 
 # Terraform loops
 

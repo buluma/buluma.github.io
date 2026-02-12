@@ -1,6 +1,15 @@
 ---
 title: Ansible Molecule testing on EC2
+author: buluma
+categories:
+  - ansible
+  - molecule
+  - testing
+  - collections
+  - roles
 ---
+
+
 
 # Ansible Molecule testing on EC2
 

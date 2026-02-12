@@ -1,6 +1,15 @@
 ---
 title: Debugging GitLab builds
+author: buluma
+categories:
+  - ansible
+  - molecule
+  - ci-cd
+  - testing
+  - roles
 ---
+
+
 
 # Debugging GitLab builds
 

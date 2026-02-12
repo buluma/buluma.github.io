@@ -1,6 +1,30 @@
 title: Ansible Roles
-description: Simple and compatible on many platforms.
+description: Simple and compatible Ansible roles for multi-distribution automation. Tested on Fedora, CentOS, Ubuntu, Debian, OpenSUSE, and more.
+url: https://buluma.github.io
 show_downloads: false
 google_analytics: UA-39023378-1
 theme: jekyll-theme-hacker
 header: Ansible Roles
+
+author:
+  name: buluma
+  email: buluma@example.com
+  url: https://github.com/buluma
+
+social:
+  name: buluma
+  links:
+    - https://github.com/buluma
+
+permalink: /:title/
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .bundle/
+  - node_modules/

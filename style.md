@@ -1,3 +1,8 @@
+---
+layout: default
+title: [Style guide](#style-guide)
+---
+
 # [Style guide](#style-guide)
 
 In general the [Ansible best practices](http://docs.ansible.com/ansible/latest/user_guide/playbooks_best_practices.html) are used.

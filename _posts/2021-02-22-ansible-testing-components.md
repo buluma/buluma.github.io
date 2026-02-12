@@ -1,6 +1,15 @@
 ---
 title: Ansible testing components
+author: buluma
+categories:
+  - ansible
+  - molecule
+  - ci-cd
+  - testing
+  - collections
 ---
+
+
 
 # Ansible testing components
 

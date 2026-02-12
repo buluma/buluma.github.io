@@ -1,6 +1,12 @@
 ---
 title: Why "hardening" is not a role
+author: buluma
+categories:
+  - ansible
+  - roles
 ---
+
+
 
 # Why "hardening" is not a role 
 

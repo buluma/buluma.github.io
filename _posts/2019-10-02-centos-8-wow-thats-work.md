@@ -1,6 +1,13 @@
 ---
 title: Why would you write Ansible roles for multiple distributions?
+author: buluma
+categories:
+  - ansible
+  - roles
+  - devops
 ---
+
+
 
 # Why would you write Ansible roles for multiple distributions?
 

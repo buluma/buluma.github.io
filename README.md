@@ -1,3 +1,8 @@
+---
+layout: default
+title: buluma.github.io
+---
+
 # buluma.github.io
 
 This repository contains the content for the Buluma site, including:

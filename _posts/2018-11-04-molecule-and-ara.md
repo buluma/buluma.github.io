@@ -1,6 +1,13 @@
 ---
 title: Molecule and ARA
+author: buluma
+categories:
+  - ansible
+  - molecule
+  - testing
 ---
+
+
 
 # Molecule and ARA
 

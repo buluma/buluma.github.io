@@ -1,6 +1,13 @@
 ---
 title: Relations between containernames, setup and Galaxy
+author: buluma
+categories:
+  - ansible
+  - testing
+  - collections
 ---
+
+
 
 # Relations between containernames, setup and Galaxy
 

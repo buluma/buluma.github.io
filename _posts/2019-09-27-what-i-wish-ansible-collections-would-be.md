@@ -1,6 +1,13 @@
 ---
 title: What I wish ansible collections would be
+author: buluma
+categories:
+  - ansible
+  - collections
+  - roles
 ---
+
+
 
 # What I wish ansible collections would be
 

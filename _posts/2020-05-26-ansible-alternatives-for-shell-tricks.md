@@ -1,6 +1,13 @@
 ---
 title: Ansible alternatives for shell tricks
+author: buluma
+categories:
+  - ansible
+  - testing
+  - best-practices
 ---
+
+
 
 # Ansible alternatives for shell tricks
 
