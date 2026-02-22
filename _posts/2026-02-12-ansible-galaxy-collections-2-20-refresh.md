@@ -1,5 +1,5 @@
 ---
-title: Galaxy Collections in 2026: What Changed
+title: Galaxy Collections in 2026 - What Changed
 author: buluma
 categories:
   - ansible
@@ -11,6 +11,7 @@ categories:
 
 
 
+# Galaxy Collections in 2026 - What Changed
 
 The last six months brought a quieter but important shift in **Ansible Galaxy workflows**: the older v2 Galaxy server API is gone in `ansible-galaxy`. If you had custom tooling that still talked to v2, it will now fail and needs to move to the supported API.
 
