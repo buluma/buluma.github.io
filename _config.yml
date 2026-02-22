@@ -3,7 +3,8 @@ description: Simple and compatible Ansible roles for multi-distribution automati
 url: https://buluma.github.io
 show_downloads: false
 google_analytics: UA-39023378-1
-theme: jekyll-theme-hacker
+# theme: jekyll-theme-hacker
+remote_theme: pages-themes/hacker@v0.2.0
 header: Ansible Roles
 
 author:
@@ -19,6 +20,7 @@ social:
 permalink: /:title/
 
 plugins:
+  - jekyll-remote-theme
   - jekyll-seo-tag
   - jekyll-sitemap
 
