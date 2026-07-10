@@ -10,6 +10,7 @@ gem "jekyll-seo-tag"
 gem "jekyll-sitemap"
 gem "jekyll-feed"
 gem "jekyll-github-metadata"
+gem "kramdown-parser-gfm"
 
 # Build tools
 gem "rake"
