@@ -29,7 +29,7 @@ In Travis CI these combinations are called a `matrix`. You can consider this ove
 | Ubuntu latest       | yes         | yes          | yes           |
 | Ubuntu devel        | yes         | yes          | yes           |
 
-Read [this page to understand the tools (Travis, Molecule and Tox)](tox-molecule-travis.html] better.
+Read [this page to understand the tools (Travis, Molecule and Tox)](tox-molecule-travis.html) better.
 
 There are multiple tests configured, here is how they relate.
 
@@ -43,8 +43,8 @@ An [example for the unit test for the Ansible role java](https://travis-ci.com/b
 
 Because distributions, molecule, and ansible change over time, a monthly test is done to all roles using this schedule:
 
-|------------|------------|
 |Day of month|Ansible Role|
+|------------|------------|
 |1|[aide](https://travis-ci.com/buluma/ansible-role-aide/settings)|
 |1|[alternatives](https://travis-ci.com/buluma/ansible-role-alternatives/settings)|
 |1|[anaconda](https://travis-ci.com/buluma/ansible-role-anaconda/settings)|

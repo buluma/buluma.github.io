@@ -19,10 +19,10 @@ All roles should pass [ansible-galaxy-rules](https://github.com/ansible/galaxy-l
 
 There are some roles that can't meet these requirements:
 
-|---|---|
 |role|reason for skip_ansible_lint|
+|---|---|
 |[common](https://galaxy.ansible.com/buluma/common)|[include_role does not support notify](https://github.com/ansible/ansible/issues/26537)|
-|[digitalocean_agent](https://galaxy.ansible.com/buluma/digitalocean_agent)|[False positive on PackageHasRetryRule](https://github.com/ansible/galaxy-lint-rules/blob/master/rules/PackageHasRetryRule.py)|
+|[digitalocean-agent](https://galaxy.ansible.com/buluma/digitalocean-agent)|[False positive on PackageHasRetryRule](https://github.com/ansible/galaxy-lint-rules/blob/master/rules/PackageHasRetryRule.py)|
 |[reboot](https://galaxy.ansible.com/buluma/reboot)|An optional check forces a task not to be a handler|
 |[release](https://galaxy.ansible.com/buluma/release)|[include_role does not support notify](https://github.com/ansible/ansible/issues/26537)|
 |[selinux](https://galaxy.ansible.com/buluma/selinux)|[include_role does not support notify](https://github.com/ansible/ansible/issues/26537)|
