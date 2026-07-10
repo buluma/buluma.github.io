@@ -22,7 +22,7 @@ color_scheme: dark
 
 # Navigation structure
 nav_enabled: true
-hierarchical_navigation: true
+hierarchical_navigation: false
 heading_anchors: true
 permalink: /:title.html
 
@@ -42,7 +42,13 @@ plugins:
   - jekyll-sitemap
   - jekyll-include-cache
 
-exclude:
+# Markdown processor
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+# Just the Docs specific settings
   - Gemfile
   - Gemfile.lock
   - vendor/
