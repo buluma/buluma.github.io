@@ -11,6 +11,9 @@ gem "jekyll-sitemap"
 gem "jekyll-feed"
 gem "jekyll-github-metadata"
 
+# Build tools
+gem "rake"
+
 # Ruby 3.3+ standard library gems
 gem "rexml"
 gem "base64"
