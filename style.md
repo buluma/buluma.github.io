@@ -24,6 +24,5 @@ There are some roles that can't meet these requirements:
 |[common](https://galaxy.ansible.com/buluma/common)|[include_role does not support notify](https://github.com/ansible/ansible/issues/26537)|
 |[digitalocean-agent](https://galaxy.ansible.com/buluma/digitalocean-agent)|[False positive on PackageHasRetryRule](https://github.com/ansible/galaxy-lint-rules/blob/master/rules/PackageHasRetryRule.py)|
 |[reboot](https://galaxy.ansible.com/buluma/reboot)|An optional check forces a task not to be a handler|
-|[release](https://galaxy.ansible.com/buluma/release)|[include_role does not support notify](https://github.com/ansible/ansible/issues/26537)|
 |[selinux](https://galaxy.ansible.com/buluma/selinux)|[include_role does not support notify](https://github.com/ansible/ansible/issues/26537)|
 |[update](https://galaxy.ansible.com/buluma/update)|[include_role does not support notify](https://github.com/ansible/ansible/issues/26537) and [package should now use latest](https://github.com/ansible/galaxy-lint-rules/blob/master/rules/PackageIsNotLatestRule.py) and [False positive on PackageHasRetryRule](https://github.com/ansible/galaxy-lint-rules/blob/master/rules/PackageHasRetryRule.py)|
