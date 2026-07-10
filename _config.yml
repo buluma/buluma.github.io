@@ -18,7 +18,7 @@ social:
   links:
     - https://github.com/buluma
 
-permalink: /:title/
+permalink: /:title.html
 
 plugins:
   - jekyll-remote-theme
