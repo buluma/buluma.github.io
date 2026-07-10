@@ -17,12 +17,12 @@ roles contain a version that requires frequent changes and tests. To better
 understand what distributions and their versions are tested, have a look at the
 [relations](relations.html) page.
 
-## All Roles ({% raw %}{{ site.data.ansible_roles | size }}{% endraw %})
+## All Roles ({{ site.data.ansible_roles | size }})
 
-{% raw %}{% assign roles = site.data.ansible_roles | sort %}{% endraw %}
+{% assign roles = site.data.ansible_roles | sort %}
 
 | Role | Galaxy | CI | Version | Downloads |
 |------|--------|-----|---------|-----------|
-{% raw %}{% for role in roles %}
+{% for role in roles %}
 | [`{{ role }}`](https://galaxy.ansible.com/buluma/{{ role }}) | [![Galaxy](https://img.shields.io/badge/galaxy-{{ role }}-brightgreen?logo=ansible)](https://galaxy.ansible.com/buluma/{{ role }}) | [![CI](https://github.com/buluma/ansible-role-{{ role }}/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-{{ role }}/actions/workflows/molecule.yml) | [![Version](https://img.shields.io/github/commits-since/buluma/ansible-role-{{ role }}/latest.svg)](https://github.com/buluma/ansible-role-{{ role }}/releases) | [![Downloads](https://img.shields.io/ansible/role/d/buluma/{{ role }})](https://galaxy.ansible.com/buluma/{{ role }}) |
-{% endfor %}{% endraw %}
+{% endfor %}
