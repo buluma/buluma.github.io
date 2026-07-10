@@ -31,7 +31,7 @@ footer_content: "Copyright © 2024 Buluma. Distributed under an MIT license."
 footer_icons:
   GitHub:
     url: https://github.com/buluma
-    class: fa-brands fa-github
+    class: "fa-brands fa-github"
     target: _blank
     rel: noopener
 
@@ -51,7 +51,7 @@ exclude:
   - scripts/
   - plans/
   - docs/
-  - *.gemspec
+  - "*.gemspec"
   - README.md
   - LICENSE
   - QWEN.md
