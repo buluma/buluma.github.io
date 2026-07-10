@@ -1,29 +1,46 @@
 title: Ansible Roles
 description: Simple and compatible Ansible roles for multi-distribution automation. Tested on Fedora, CentOS, Ubuntu, Debian, OpenSUSE, and more.
 url: https://buluma.github.io
-show_downloads: false
 google_analytics: UA-39023378-1
 repository: buluma/buluma.github.io
-# theme: jekyll-theme-hacker
-remote_theme: pages-themes/hacker@v0.2.0
-header: Ansible Roles
 
-author:
-  name: buluma
-  email: buluma@example.com
-  url: https://github.com/buluma
+# Theme: just-the-docs (modern, searchable, responsive)
+remote_theme: just-the-docs/just-the-docs@v0.8.2
 
-social:
-  name: buluma
-  links:
-    - https://github.com/buluma
+# Enable search
+search_enabled: true
+search:
+  heading_level: 2
+  previews: 3
+  preview_words_before: 5
+  preview_words_after: 10
+  tokenizer_separator: /[\s/]+/
+  rel_url: true
 
+# Color scheme (dark mode by default)
+color_scheme: dark
+
+# Navigation structure
+nav_enabled: true
+hierarchical_navigation: true
+heading_anchors: true
 permalink: /:title.html
 
+# Footer
+footer_content: "Copyright &copy; 2024 Buluma. Distributed under an MIT license."
+footer_icons:
+  GitHub:
+    url: https://github.com/buluma
+    class: fa-brands fa-github
+    target: _blank
+    rel: noopener
+
+# Plugins
 plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-include-cache
 
 exclude:
   - Gemfile
@@ -31,3 +48,70 @@ exclude:
   - vendor/
   - .bundle/
   - node_modules/
+  - scripts/
+  - plans/
+  - docs/
+  - *.gemspec
+  - README.md
+  - LICENSE
+  - QWEN.md
+  - GEMINI.md
+  - CONTRIBUTING.md
+  - CODE_OF_CONDUCT.md
+  - SUPPORT.md
+  - UPDATES-NOTE.md
+  - project-overview.md
+  - code-standards.md
+  - codebase-summary.md
+  - system-architecture.md
+  - deployment-guide.md
+  - design-guidelines.md
+  - api-reference.md
+  - summary.md
+
+# Just the Docs specific settings
+collections:
+  roles:
+    output: true
+    permalink: /roles/:name/
+  docs:
+    output: true
+    permalink: /docs/:path/
+
+# Defaults for collections
+defaults:
+  - scope:
+      path: ""
+      type: "roles"
+    values:
+      layout: "role"
+      nav_exclude: false
+  - scope:
+      path: ""
+      type: "docs"
+    values:
+      layout: "default"
+      nav_exclude: false
+  - scope:
+      path: "_posts"
+    values:
+      layout: "post"
+      nav_exclude: true
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      nav_exclude: false
+
+# Aux links (top right)
+aux_links:
+  "GitHub Repository":
+    - "https://github.com/buluma"
+
+# Mermaid diagrams (optional)
+mermaid:
+  version: "10.6.1"
+
+# Copy button on code blocks
+copy_button:
+  enabled: true

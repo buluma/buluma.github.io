@@ -1,0 +1,60 @@
+# Main navigation links for the sidebar
+main:
+  - title: "Home"
+    url: /
+    nav_order: 1
+
+  - title: "Ansible Roles"
+    url: /index.html
+    nav_order: 2
+
+  - title: "Documentation"
+    nav_order: 3
+    children:
+      - title: "How to Use These Roles"
+        url: /how-to-use-these-roles.html
+        nav_order: 1
+      - title: "Style Guide"
+        url: /style.html
+        nav_order: 2
+      - title: "Testing"
+        url: /testing.html
+        nav_order: 3
+      - title: "Dependencies"
+        url: /dependencies.html
+        nav_order: 4
+      - title: "Relations"
+        url: /relations.html
+        nav_order: 5
+      - title: "Contributions"
+        url: /contributions.html
+        nav_order: 6
+      - title: "Learning Ansible"
+        url: /learning_ansible.html
+        nav_order: 7
+      - title: "Presentations"
+        url: /presentations.html
+        nav_order: 8
+      - title: "My Manifesto"
+        url: /my-manifesto.html
+        nav_order: 9
+      - title: "About"
+        url: /about.html
+        nav_order: 10
+
+  - title: "Blog"
+    url: /blog.html
+    nav_order: 4
+
+  - title: "External Links"
+    nav_order: 5
+    children:
+      - title: "GitHub Organization"
+        url: https://github.com/buluma
+        external: true
+      - title: "Ansible Galaxy"
+        url: https://galaxy.ansible.com/buluma
+        external: true
+      - title: "Uptime Monitor"
+        url: https://buluma.github.io/uptime/
+        external: true

@@ -1,13 +1,64 @@
 ---
 ---
 
-@import 'jekyll-theme-hacker';
+@import 'just-the-docs';
+
+/* ==========================================================================
+   Custom Color Scheme - Warm Amber/Brown Theme
+   ========================================================================== */
 
 $accent-warm: #e8a854;
 $accent-gentle: #c9b896;
-$bg-soft: #1f1f1f;
+$bg-soft: #1a1a1a;
 $text-warm: #e8e0d5;
-$code-bg: #151515;
+$code-bg: #121212;
+
+/* Override Just the Docs color variables */
+$jd-colors-light: (
+  "base": #1a1a1a,
+  "text": #e8e0d5,
+  "link": #e8a854,
+  "link-hover": #f0b86a,
+  "header-background": #1a1a1a,
+  "header-text": #e8a854,
+  "footer-background": #1a1a1a,
+  "footer-text": #b8b0a0,
+  "sidebar-background": #141414,
+  "sidebar-text": #e8e0d5,
+  "sidebar-link": #c9b896,
+  "sidebar-link-hover": #e8a854,
+  "sidebar-border": #333,
+  "table-header-background": rgba(232, 168, 84, 0.15),
+  "table-header-text": #e8a854,
+  "table-row-even": rgba(0, 0, 0, 0.2),
+  "table-row-hover": rgba(255, 255, 255, 0.05),
+  "code-background": #121212,
+  "code-text": #e8a854,
+  "blockquote-border": #e8a854,
+  "blockquote-background": rgba(232, 168, 84, 0.05),
+  "blockquote-text": #b8b0a0,
+  "button-background": rgba(232, 168, 84, 0.1),
+  "button-border": rgba(232, 168, 84, 0.3),
+  "button-text": #e8a854,
+  "button-hover-background": rgba(232, 168, 84, 0.2),
+  "search-background": rgba(255, 255, 255, 0.05),
+  "search-border": rgba(232, 168, 84, 0.2),
+  "search-text": #e8e0d5,
+  "nav-footer-background": #141414,
+  "nav-footer-border": #333,
+  "kbd-background": rgba(255, 255, 255, 0.08),
+  "kbd-border": rgba(255, 255, 255, 0.15),
+  "kbd-text": #ccc,
+);
+
+$jd-colors-dark: $jd-colors-light;
+
+/* Apply the dark scheme */
+$jd-color-scheme: "dark";
+
+/* ==========================================================================
+   Custom Styles
+   ========================================================================== */
 
 body {
   color: $text-warm;
@@ -40,20 +91,7 @@ p {
   margin: 1em 0;
 }
 
-footer {
-  background: rgba(0, 0, 0, 0.2);
-  width: 100%;
-  border-top: 1px dashed $accent-warm;
-  padding: 20px 0;
-  margin: 40px 0 0 0;
-}
-
-#main_content {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
+/* Table styling */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -162,6 +200,16 @@ img {
   margin: 15px 0;
 }
 
+/* Footer */
+footer {
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  border-top: 1px dashed $accent-warm;
+  padding: 20px 0;
+  margin: 40px 0 0 0;
+}
+
+/* Buttons */
 .btn {
   background: rgba(232, 168, 84, 0.1);
   border: 1px solid rgba(232, 168, 84, 0.3);
@@ -183,6 +231,7 @@ img {
   }
 }
 
+/* Header */
 header {
   background: rgba(0, 0, 0, 0.2);
   border-bottom: 1px solid rgba(232, 168, 84, 0.2);
@@ -192,6 +241,7 @@ header {
   }
 }
 
+/* kbd styling */
 kbd {
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.15);
@@ -202,15 +252,13 @@ kbd {
   color: #ccc;
 }
 
-.highlight {
-  border-radius: 6px;
-}
-
+/* Selection */
 ::selection {
   background: rgba(232, 168, 84, 0.3);
   color: #fff;
 }
 
+/* Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -229,8 +277,9 @@ kbd {
   }
 }
 
+/* Responsive */
 @media (max-width: 768px) {
-  #main_content {
+  .main-content {
     padding: 15px;
   }
 
@@ -248,4 +297,46 @@ kbd {
 
   h1 { font-size: 1.8em; }
   h2 { font-size: 1.5em; }
+}
+
+/* Just the Docs specific overrides */
+.side-bar {
+  background-color: #141414 !important;
+  border-right: 1px solid #333 !important;
+}
+
+.nav-list .nav-title {
+  color: $accent-warm !important;
+}
+
+.nav-list .nav-item .nav-link {
+  color: $accent-gentle !important;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: $accent-warm !important;
+  }
+}
+
+.nav-list .nav-item.current > .nav-link {
+  color: $accent-warm !important;
+  font-weight: 500;
+}
+
+/* Search */
+.search-input {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(232, 168, 84, 0.2) !important;
+  color: $text-warm !important;
+
+  &::placeholder {
+    color: #888 !important;
+  }
+}
+
+/* Code copy button */
+.highlight .copy-btn {
+  background: rgba(232, 168, 84, 0.1);
+  border: 1px solid rgba(232, 168, 84, 0.3);
+  color: $accent-warm;
 }
