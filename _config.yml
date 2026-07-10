@@ -48,7 +48,7 @@ kramdown:
   hard_wrap: false
   syntax_highlighter: rouge
 
-# Just the Docs specific settings
+exclude:
   - Gemfile
   - Gemfile.lock
   - vendor/
