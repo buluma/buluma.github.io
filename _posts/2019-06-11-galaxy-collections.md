@@ -56,7 +56,7 @@ tags:
     - ara
 repository: "https://github.com/buluma/ansible-development-environment"
 documentation: "https://github.com/buluma/ansible-development-environment/blob/master/README.md"
-homepage: "https://buluma.nl"
+homepage: "https://buluma.github.io"
 issues: "https://github.com/buluma/ansible-development-environment/issues"
 ```
 
