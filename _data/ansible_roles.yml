@@ -16,7 +16,6 @@
 - apt_repository
 - ara
 - ara_api
-- artifactory
 - at
 - atom
 - auditd
@@ -72,7 +71,6 @@
 - demo
 - dhcpd
 - digitalocean-agent
-- digitalocean_agent
 - diskspace
 - dns
 - dnsmasq
@@ -167,7 +165,6 @@
 - nfs
 - nfsserver
 - nginx
-- node_red
 - nodejs
 - nomad
 - npm
@@ -187,7 +184,6 @@
 - perforce
 - php
 - php_fpm
-- phpmyadmin
 - pip
 - podman
 - postfix
@@ -231,7 +227,6 @@
 - ssh_chroot_jail
 - storage
 - stratis
-- subversion
 - sudo
 - sudo-pair
 - swap
@@ -249,7 +244,6 @@
 - tlp
 - tomcat
 - transmission
-- travis
 - tune2fs
 - turn
 - types
