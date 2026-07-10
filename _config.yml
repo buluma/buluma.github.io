@@ -14,7 +14,7 @@ search:
   previews: 3
   preview_words_before: 5
   preview_words_after: 10
-  tokenizer_separator: /[\s/]+/
+  tokenizer_separator: "[\\s/]+"
   rel_url: true
 
 # Color scheme (dark mode by default)
@@ -27,7 +27,7 @@ heading_anchors: true
 permalink: /:title.html
 
 # Footer
-footer_content: "Copyright &copy; 2024 Buluma. Distributed under an MIT license."
+footer_content: "Copyright © 2024 Buluma. Distributed under an MIT license."
 footer_icons:
   GitHub:
     url: https://github.com/buluma
