@@ -23,6 +23,5 @@ understand what distributions and their versions are tested, have a look at the
 
 | Role | Galaxy | CI Status | Version | Downloads |
 |------|--------|-----------|---------|-----------|
-{% for role in roles %}
-| [`{{ role }}`](https://galaxy.ansible.com/buluma/{{ role }}) | [![Galaxy](https://img.shields.io/badge/galaxy-{{ role }}-brightgreen?logo=ansible)](https://galaxy.ansible.com/buluma/{{ role }}) | [![CI](https://github.com/buluma/ansible-role-{{ role }}/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-{{ role }}/actions/workflows/molecule.yml) | [![Version](https://img.shields.io/github/commits-since/buluma/ansible-role-{{ role }}/latest.svg)](https://github.com/buluma/ansible-role-{{ role }}/releases) | [![Downloads](https://img.shields.io/ansible/role/d/buluma/{{ role }})](https://galaxy.ansible.com/buluma/{{ role }}) |
+{% for role in roles %}| [`{{ role }}`](https://galaxy.ansible.com/buluma/{{ role }}) | [![Galaxy](https://img.shields.io/badge/galaxy-{{ role }}-brightgreen?logo=ansible)](https://galaxy.ansible.com/buluma/{{ role }}) | [![CI](https://github.com/buluma/ansible-role-{{ role }}/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-{{ role }}/actions/workflows/molecule.yml) | [![Version](https://img.shields.io/github/commits-since/buluma/ansible-role-{{ role }}/latest.svg)](https://github.com/buluma/ansible-role-{{ role }}/releases) | [![Downloads](https://img.shields.io/ansible/role/d/buluma/{{ role }})](https://galaxy.ansible.com/buluma/{{ role }}) |
 {% endfor %}
