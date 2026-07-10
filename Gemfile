@@ -2,13 +2,18 @@
 
 source "https://rubygems.org"
 
-gem "github-pages", group: :jekyll_plugins
+# Use modern Jekyll directly (github-pages gem is outdated)
+gem "jekyll", "~> 3.10"
+gem "jekyll-include-cache"
+gem "jekyll-remote-theme"
+gem "jekyll-seo-tag"
+gem "jekyll-sitemap"
+gem "jekyll-feed"
+gem "jekyll-github-metadata"
 
-# Additional plugins for just-the-docs
-gem "jekyll-include-cache", group: :jekyll_plugins
-gem "jekyll-remote-theme", group: :jekyll_plugins
-
-# Ruby 3.3+ compatibility
-gem "rexml", group: :jekyll_plugins
-gem "base64", group: :jekyll_plugins
-gem "bigdecimal", group: :jekyll_plugins
+# Ruby 3.3+ standard library gems
+gem "rexml"
+gem "base64"
+gem "bigdecimal"
+gem "csv"
+gem "logger"
