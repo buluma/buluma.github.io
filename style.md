@@ -1,6 +1,6 @@
 ---
 layout: default
-title: [Style guide](#style-guide)
+title: "[Style guide](#style-guide)"
 ---
 
 # [Style guide](#style-guide)

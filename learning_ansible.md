@@ -1,6 +1,6 @@
 ---
 layout: default
-title: [Learning Ansible](#learning-ansible)
+title: "[Learning Ansible](#learning-ansible)"
 ---
 
 # [Learning Ansible](#learning-ansible)

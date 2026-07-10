@@ -1,6 +1,6 @@
 ---
 layout: default
-title: [Dependencies](#dependencies)
+title: "[Dependencies](#dependencies)"
 ---
 
 # [Dependencies](#dependencies)

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Blog
+nav_exclude: true
 ---
 
 An overview of articles
@@ -12,7 +13,7 @@ An overview of articles
   {% endfor %}
 </ul>
 
-{% for post in site.posts | sort post.date %}
+{% for post in site.posts %}
 <article>
 {{ post.content }}
 </article>

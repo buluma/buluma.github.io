@@ -1,6 +1,6 @@
 ---
 layout: default
-title: [Distribution relations](#distribution-relations)
+title: "[Distribution relations](#distribution-relations)"
 ---
 
 # [Distribution relations](#distribution-relations)
