@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "[Tests](#tests)"
+title: "Tests"
 ---
 
 # [Tests](#tests)

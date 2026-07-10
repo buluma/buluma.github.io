@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "[My Manifesto](#my-manifesto)"
+title: "My Manifesto"
 ---
 
 # [My Manifesto](#my-manifesto)

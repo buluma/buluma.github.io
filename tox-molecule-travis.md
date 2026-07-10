@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "[Tox, Molecule and Travis](#tox-molecule-and-travis)"
+title: "Tox, Molecule and Travis"
 ---
 
 # [Tox, Molecule and Travis](#tox-molecule-and-travis)

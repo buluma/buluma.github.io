@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Docker_Builds
+title: Docker Builds
 ---
 
 ## [Docker builds](#docker-builds)
