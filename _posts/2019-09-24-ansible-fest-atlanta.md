@@ -43,14 +43,14 @@ Here is how to [develop Ansible Collections](https://docs.ansible.com/ansible/de
 
 There are a few applications to analyse data and give insights on development and usage of Ansible:
 
-- [Roles analysis](https://stats.eng.ansible.com/apps/galaxy/RolesStats.html)
-- [Modules details](https://stats.eng.ansible.com/apps/docs/ModuleMomentum.html)
-- [Pull requests per country](https://stats.eng.ansible.com/apps/docs/newmap.html)
+- Roles analysis
+- Modules details
+- Pull requests per country
 
-There are many more perspectives, [have a look](https://stats.eng.ansible.com/apps/).
+There are many more perspectives.
 
 # Next Ansible Fest not in Europe
 
-[Spain seems to be the largest contributor](https://stats.eng.ansible.com/apps/docs/newmap.html) of Ansible, but next Ansible Fest will be in San Diego.
+Spain seems to be the largest contributor of Ansible, but next Ansible Fest will be in San Diego.
 
 The Contributors Summit will be in Europe though.

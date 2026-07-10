@@ -19,7 +19,7 @@ As [the documentation](https://galaxy.ansible.com/docs/mazer/examples.html) desc
 Collections are a new way to package and distribute Ansible related content.
 ```
 
-I write [a lot of roles](https://buluma.nl/), roles are nice, but it's a bit like ingredients without a recipe: A role is only a part of the whole picture.
+I write a lot of roles, roles are nice, but it's a bit like ingredients without a recipe: A role is only a part of the whole picture.
 
 Collections allow you to package:
 - roles
@@ -29,7 +29,7 @@ Collections allow you to package:
 - modules
 - strategies
 
-So instead of [upstreaming](https://en.wikipedia.org/wiki/Upstream_(software_development) content to Ansible, you can publish or consume content yourself.
+So instead of [upstreaming](https://en.wikipedia.org/wiki/Upstream_%28software_development%29) content to Ansible, you can publish or consume content yourself.
 
 The whole process is [documented](https://galaxy.ansible.com/docs/contributing/creating_collections.html) and should not be difficult.
 

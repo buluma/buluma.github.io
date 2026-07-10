@@ -34,13 +34,13 @@ To explain what happens:
 
 ## Use ansible-lint for quick feedback
 
-[Andrew](https://github.com/awcrosby) has written [a tool](https://github.com/ansible/ansible-lint) including [many rules](https://github.com/ansible/ansible-lint/tree/master/lib/ansiblelint/rules) that help you write readable and consistent code.
+[Andrew](https://github.com/awcrosby) has written [a tool](https://github.com/ansible/ansible-lint) including [many rules](https://github.com/ansible/ansible-lint/tree/main/src/ansiblelint/rules) that help you write readable and consistent code.
 
 There are times where [I don't agree](https://github.com/ansible/ansible-lint/pull/409) to the rules, but the feedback is quickly processed.A
 
-There are also times where I initially think rules are useless, but after a while [I'm convinced about the intent](https://buluma.nl/2018/11/01/lines-should-be-no-longer-than-120-chars.html) and change my code.
+There are also times where I initially think rules are useless, but after a while I'm convinced about the intent and change my code.
 
-You can also [describe your preferences](https://github.com/buluma/ansible-lint-rules) and use ansible-lint to verify you code. Great for teams that need to agree on a style.
+You can also describe your preferences and use ansible-lint to verify you code. Great for teams that need to agree on a style.
 
 ## Use molecule on Travis to test
 
