@@ -1,23 +1,28 @@
 ---
 layout: default
 title: Ansible Roles
+nav_order: 1
 ---
 
-## [Ansible Roles](#ansible-roles)
+# Ansible Roles
 
 These [Ansible](https://www.ansible.com/) roles are
 [simple in style](style.html) and [work well](how-to-use-these-roles.html)
-together on many distributions and many Ansible version.
+together on many distributions and many Ansible versions.
 
-## [Unit tests](#unit-tests)
+## Unit Tests
 
-A monthly test to see of the role still works on the current distributions. Some
+A monthly test to see if the role still works on the current distributions. Some
 roles contain a version that requires frequent changes and tests. To better
 understand what distributions and their versions are tested, have a look at the
 [relations](relations.html) page.
 
-| Role name                                                  | GitHub Action                                                                                                                                                                             | Version                                                                                                                                                         | Downloads                                                                                                             |
-| ---------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| {% for role in site.data.ansible_roles %}                  |                                                                                                                                                                                           |                                                                                                                                                                 |                                                                                                                       |
-| [{{ role }}](https://galaxy.ansible.com/buluma/{{ role }}) | [![github](https://github.com/buluma/ansible-role-{{ role }}/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-{{ role }}/actions/workflows/molecule.yml) | [![version](https://img.shields.io/github/commits-since/buluma/ansible-role-{{ role }}/latest.svg)](https://github.com/buluma/ansible-role-{{ role }}/releases) | [![downloads](https://img.shields.io/ansible/role/d/buluma/{{ role }})](https://galaxy.ansible.com/buluma/{{ role }}) |
-| {% endfor %}                                               |                                                                                                                                                                                           |                                                                                                                                                                 |                                                                                                                       |
+## All Roles ({% raw %}{{ site.data.ansible_roles | size }}{% endraw %})
+
+{% raw %}{% assign roles = site.data.ansible_roles | sort %}{% endraw %}
+
+| Role | Galaxy | CI | Version | Downloads |
+|------|--------|-----|---------|-----------|
+{% raw %}{% for role in roles %}
+| [`{{ role }}`](https://galaxy.ansible.com/buluma/{{ role }}) | [![Galaxy](https://img.shields.io/badge/galaxy-{{ role }}-brightgreen?logo=ansible)](https://galaxy.ansible.com/buluma/{{ role }}) | [![CI](https://github.com/buluma/ansible-role-{{ role }}/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-{{ role }}/actions/workflows/molecule.yml) | [![Version](https://img.shields.io/github/commits-since/buluma/ansible-role-{{ role }}/latest.svg)](https://github.com/buluma/ansible-role-{{ role }}/releases) | [![Downloads](https://img.shields.io/ansible/role/d/buluma/{{ role }})](https://galaxy.ansible.com/buluma/{{ role }}) |
+{% endfor %}{% endraw %}
