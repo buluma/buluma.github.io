@@ -11,6 +11,10 @@ $bg-soft: #1a1a1a;
 $text-warm: #e8e0d5;
 $code-bg: #121212;
 
+/* Modern font stack */
+$font-ui: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-mono: "JetBrains Mono", "SFMono-Regular", "Fira Code", Consolas, "Liberation Mono", Menlo, monospace;
+
 /* Override Just the Docs color variables */
 $jd-colors-light: (
   "base": #1a1a1a,
@@ -55,204 +59,337 @@ $jd-colors-dark: $jd-colors-light;
 $jd-color-scheme: "dark";
 
 /* ==========================================================================
-   Custom Styles
+   Custom Styles - Centered Content, Better Typography
    ========================================================================== */
 
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap");
+
+/* Root variables for consistent spacing */
+:root {
+  --content-max-width: 880px;
+  --content-padding: 2rem;
+  --sidebar-width: 280px;
+}
+
+/* Page wrapper - center the main content */
+.page-wrap {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Main content area - centered with max-width */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0; /* Allow shrinking */
+}
+
+/* Content wrapper - the centered column */
+.content-wrapper {
+  width: 100%;
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  padding: var(--content-padding);
+  box-sizing: border-box;
+}
+
+/* Override Just the Docs main content */
+main.main-content {
+  flex: 1;
+  width: 100%;
+}
+
+.page-content {
+  width: 100%;
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  padding: var(--content-padding);
+  box-sizing: border-box;
+}
+
+/* Base typography */
+html {
+  font-size: 16px;
+}
+
 body {
+  font-family: $font-ui;
+  font-weight: 400;
+  line-height: 1.7;
   color: $text-warm;
   background: $bg-soft;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
+/* Headings - modern, clean */
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-ui;
+  font-weight: 600;
+  line-height: 1.3;
+  color: $accent-gentle;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  border-bottom: 1px solid rgba(201, 184, 150, 0.25);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
+  margin-top: 2.5rem;
+}
+
+h3 {
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+  margin-top: 2rem;
+}
+
+h4 { font-size: 1.125rem; }
+h5 { font-size: 1rem; }
+h6 { font-size: 0.875rem; }
+
+/* Paragraphs */
+p {
+  margin: 1rem 0;
+  line-height: 1.8;
+  max-width: 90ch; /* Optimal reading width */
+}
+
+/* Links */
 a {
   color: $accent-warm;
-  text-shadow: 0 0 3px rgba(232, 168, 84, 0.3);
-  transition: color 0.2s ease;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.15s ease;
 
   &:hover {
-    color: lighten($accent-warm, 15%);
-    text-shadow: 0 0 8px rgba(232, 168, 84, 0.5);
+    color: lighten($accent-warm, 10%);
+    border-bottom-color: currentColor;
+    text-shadow: 0 0 8px rgba(232, 168, 84, 0.4);
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: $accent-gentle;
-  margin-top: 1.5em;
-  margin-bottom: 0.5em;
-}
+/* Lists */
+ul, ol {
+  padding-left: 1.5rem;
+  margin: 1.25rem 0;
 
-h1 { font-size: 2.2em; border-bottom: 1px solid rgba(201, 184, 150, 0.3); padding-bottom: 0.3em; }
-h2 { font-size: 1.8em; }
-h3 { font-size: 1.4em; }
-
-p {
-  line-height: 1.7;
-  margin: 1em 0;
-}
-
-/* Table styling */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 25px 0;
-  font-size: 0.95em;
-  border-radius: 6px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-
-  th, td {
-    padding: 12px 15px;
-    text-align: left;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  }
-
-  th {
-    background: rgba(232, 168, 84, 0.15);
-    color: $accent-warm;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 0.85em;
-    letter-spacing: 0.5px;
-  }
-
-  tr {
-    transition: background 0.2s ease;
-
-    &:last-child td { border-bottom: none; }
-    &:hover {
-      background: rgba(255, 255, 255, 0.04);
-    }
-  }
-
-  tbody tr:nth-child(even) {
-    background: rgba(0, 0, 0, 0.15);
+  li {
+    margin: 0.5rem 0;
+    line-height: 1.7;
   }
 }
 
+/* Code - JetBrains Mono */
 code {
+  font-family: $font-mono;
+  font-size: 0.875em;
   background: $code-bg;
-  padding: 2px 6px;
+  padding: 0.15em 0.45em;
   border-radius: 4px;
-  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
-  font-size: 0.9em;
   color: $accent-warm;
-  border: 1px solid rgba(232, 168, 84, 0.2);
+  border: 1px solid rgba(232, 168, 84, 0.15);
+  font-weight: 400;
 }
 
 pre {
   background: $code-bg !important;
-  padding: 20px !important;
-  border-radius: 8px;
-  margin: 20px 0;
-  border: 1px solid rgba(232, 168, 84, 0.15);
+  padding: 1.5rem !important;
+  border-radius: 10px;
+  margin: 1.5rem 0;
+  border: 1px solid rgba(232, 168, 84, 0.1);
   overflow-x: auto;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  line-height: 1.65;
 
   code {
     background: transparent;
     padding: 0;
     border: none;
     color: #d4d0c7;
-    font-size: 0.85em;
-    line-height: 1.6;
+    font-size: 0.85rem;
+    font-weight: 400;
+    line-height: inherit;
   }
 }
 
+/* Blockquotes */
 blockquote {
   border-left: 4px solid $accent-warm;
-  padding: 15px 20px;
-  margin: 25px 0;
-  background: rgba(232, 168, 84, 0.05);
-  border-radius: 0 6px 6px 0;
-  color: #b8b0a0;
+  padding: 1.25rem 1.5rem;
+  margin: 2rem 0;
+  background: rgba(232, 168, 84, 0.04);
+  border-radius: 0 8px 8px 0;
+  color: #c8c0b0;
   font-style: italic;
-  font-size: 1.05em;
+  font-size: 1.05rem;
+  line-height: 1.7;
 
   p { margin: 0; }
 
   code {
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.25);
   }
 }
 
-ul, ol {
-  padding-left: 25px;
-  margin: 15px 0;
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  font-family: $font-ui;
 
-  li {
-    margin: 8px 0;
-    line-height: 1.6;
+  th, td {
+    padding: 0.875rem 1.25rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  th {
+    background: rgba(232, 168, 84, 0.12);
+    color: $accent-warm;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+  }
+
+  tr {
+    transition: background 0.15s ease;
+
+    &:last-child td { border-bottom: none; }
+    &:hover { background: rgba(255, 255, 255, 0.03); }
+  }
+
+  tbody tr:nth-child(even) {
+    background: rgba(0, 0, 0, 0.12);
   }
 }
 
+/* Horizontal rule */
 hr {
   border: none;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  margin: 40px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin: 3rem 0;
 }
 
+/* Images */
 img {
   max-width: 100%;
   height: auto;
-  border-radius: 6px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  margin: 15px 0;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  margin: 1.5rem 0;
 }
 
 /* Footer */
 footer {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.15);
   width: 100%;
-  border-top: 1px dashed $accent-warm;
-  padding: 20px 0;
-  margin: 40px 0 0 0;
+  border-top: 1px dashed rgba(232, 168, 84, 0.3);
+  padding: 2rem 0;
+  margin: 4rem 0 0 0;
+  text-align: center;
+  color: #a8a090;
+  font-size: 0.875rem;
 }
 
 /* Buttons */
 .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   background: rgba(232, 168, 84, 0.1);
-  border: 1px solid rgba(232, 168, 84, 0.3);
+  border: 1px solid rgba(232, 168, 84, 0.25);
   color: $accent-warm;
-  padding: 8px 16px;
-  border-radius: 4px;
-  transition: all 0.2s ease;
+  padding: 0.625rem 1.25rem;
+  border-radius: 6px;
+  font-family: $font-ui;
+  font-weight: 500;
+  font-size: 0.875rem;
+  transition: all 0.15s ease;
+  text-decoration: none;
 
   &:hover {
-    background: rgba(232, 168, 84, 0.2);
-    color: lighten($accent-warm, 10%);
+    background: rgba(232, 168, 84, 0.18);
+    color: lighten($accent-warm, 8%);
+    border-color: rgba(232, 168, 84, 0.4);
     text-decoration: none;
+    transform: translateY(-1px);
   }
 
   &.btn-github {
-    background: rgba(255, 255, 255, 0.05);
-    border-color: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(255, 255, 255, 0.12);
     color: #ccc;
   }
 }
 
-/* Header */
+/* Header - centered nav */
 header {
-  background: rgba(0, 0, 0, 0.2);
-  border-bottom: 1px solid rgba(232, 168, 84, 0.2);
+  background: rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid rgba(232, 168, 84, 0.15);
+  padding: 1.25rem 0;
+  margin-bottom: 0;
+
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
 
   h1, h2 {
     color: $accent-warm;
+    margin: 0;
+    border: none;
+    padding: 0;
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-weight: 400;
+    color: $accent-gentle;
+    font-size: 1rem;
+  }
+
+  nav {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
   }
 }
 
 /* kbd styling */
 kbd {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  font-family: $font-mono;
+  font-size: 0.75rem;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 4px;
-  padding: 2px 6px;
-  font-family: monospace;
-  font-size: 0.85em;
-  color: #ccc;
+  padding: 0.15rem 0.5rem;
+  color: #ddd;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 /* Selection */
 ::selection {
-  background: rgba(232, 168, 84, 0.3);
+  background: rgba(232, 168, 84, 0.35);
   color: #fff;
 }
 
@@ -263,78 +400,233 @@ kbd {
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.15);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(232, 168, 84, 0.4);
+  background: rgba(232, 168, 84, 0.35);
   border-radius: 4px;
+  border: 2px solid rgba(0, 0, 0, 0.15);
 
   &:hover {
-    background: rgba(232, 168, 84, 0.6);
+    background: rgba(232, 168, 84, 0.55);
   }
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .main-content {
-    padding: 15px;
-  }
+/* ==========================================================================
+   Just the Docs Overrides
+   ========================================================================== */
 
-  table {
-    font-size: 0.85em;
-
-    th, td {
-      padding: 8px 10px;
-    }
-  }
-
-  pre {
-    padding: 15px !important;
-  }
-
-  h1 { font-size: 1.8em; }
-  h2 { font-size: 1.5em; }
-}
-
-/* Just the Docs specific overrides */
+/* Sidebar styling */
 .side-bar {
   background-color: #141414 !important;
-  border-right: 1px solid #333 !important;
+  border-right: 1px solid #2a2a2a !important;
+  width: var(--sidebar-width) !important;
+  flex-shrink: 0;
 }
 
 .nav-list .nav-title {
   color: $accent-warm !important;
+  font-family: $font-ui;
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
 .nav-list .nav-item .nav-link {
   color: $accent-gentle !important;
-  transition: color 0.2s ease;
+  font-family: $font-ui;
+  font-weight: 400;
+  font-size: 0.9rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  transition: all 0.15s ease;
 
   &:hover {
     color: $accent-warm !important;
+    background: rgba(232, 168, 84, 0.08);
   }
 }
 
 .nav-list .nav-item.current > .nav-link {
   color: $accent-warm !important;
+  background: rgba(232, 168, 84, 0.12);
   font-weight: 500;
 }
 
-/* Search */
+/* Search input */
 .search-input {
-  background: rgba(255, 255, 255, 0.05) !important;
-  border: 1px solid rgba(232, 168, 84, 0.2) !important;
+  background: rgba(255, 255, 255, 0.04) !important;
+  border: 1px solid rgba(232, 168, 84, 0.18) !important;
   color: $text-warm !important;
+  font-family: $font-ui !important;
+  font-size: 0.9rem !important;
+  border-radius: 8px !important;
+  padding: 0.625rem 1rem !important;
 
   &::placeholder {
-    color: #888 !important;
+    color: #787060 !important;
+  }
+
+  &:focus {
+    border-color: $accent-warm !important;
+    box-shadow: 0 0 0 3px rgba(232, 168, 84, 0.15) !important;
+  }
+}
+
+/* Search results */
+.search-results {
+  background: #161616 !important;
+  border: 1px solid rgba(232, 168, 84, 0.15) !important;
+  border-radius: 10px !important;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4) !important;
+
+  .search-result-title {
+    color: $accent-warm !important;
+    font-family: $font-ui !important;
+    font-weight: 500 !important;
+  }
+
+  .search-result-entry {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
   }
 }
 
 /* Code copy button */
-.highlight .copy-btn {
-  background: rgba(232, 168, 84, 0.1);
-  border: 1px solid rgba(232, 168, 84, 0.3);
-  color: $accent-warm;
+.highlight {
+  position: relative;
+  border-radius: 10px !important;
+
+  .copy-btn {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    z-index: 10;
+    background: rgba(232, 168, 84, 0.12) !important;
+    border: 1px solid rgba(232, 168, 84, 0.25) !important;
+    color: $accent-warm !important;
+    font-family: $font-ui !important;
+    font-size: 0.7rem !important;
+    font-weight: 500 !important;
+    padding: 0.375rem 0.75rem !important;
+    border-radius: 6px !important;
+    opacity: 0;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+    &:hover {
+      background: rgba(232, 168, 84, 0.2) !important;
+      color: lighten($accent-warm, 10%) !important;
+    }
+  }
+
+  &:hover .copy-btn {
+    opacity: 1;
+  }
+}
+
+/* Footer in sidebar */
+.nav-footer {
+  background: #111 !important;
+  border-top: 1px solid #2a2a2a !important;
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  :root {
+    --content-max-width: 100%;
+    --content-padding: 1.5rem;
+    --sidebar-width: 260px;
+  }
+
+  .page-content {
+    padding: var(--content-padding);
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --content-padding: 1.25rem;
+  }
+
+  .side-bar {
+    width: 100% !important;
+    position: fixed;
+    left: -100%;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+    transition: left 0.3s ease;
+    box-shadow: 4px 0 24px rgba(0, 0, 0, 0.4);
+
+    &.open {
+      left: 0;
+    }
+  }
+
+  header .content-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.375rem; }
+  h3 { font-size: 1.125rem; }
+
+  table {
+    font-size: 0.8rem;
+    th, td { padding: 0.625rem 0.75rem; }
+  }
+
+  pre { padding: 1rem !important; }
+}
+
+/* Print styles */
+@media print {
+  .side-bar, header, footer, .search-input, .btn {
+    display: none !important;
+  }
+
+  .page-content {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+
+  a { text-decoration: underline; }
+}
+
+/* Focus visible for accessibility */
+:focus-visible {
+  outline: 2px solid $accent-warm;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
