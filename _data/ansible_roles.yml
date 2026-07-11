@@ -17,7 +17,6 @@
 - ara
 - ara_api
 - at
-- atom
 - auditd
 - auto_update
 - autofs
@@ -75,7 +74,6 @@
 - drush
 - dsvpn
 - earlyoom
-- eclipse
 - elastic_repo
 - elasticsearch
 - enpass
