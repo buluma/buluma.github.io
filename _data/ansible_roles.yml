@@ -43,7 +43,6 @@
 - cargo
 - centos_base
 - certbot
-- checkmk_agent
 - clamav
 - code
 - collectd
