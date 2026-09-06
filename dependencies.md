@@ -8,7 +8,7 @@ title: "Dependencies"
 Some roles depend on other roles. This post is more of a reminder to myself on ordering a big change to all roles.
 
 ## [First wave (green)](#first-wave)
-- [bootstrap](https://github.com/buluma/ansible-role-bootstrap) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/buluma/ansible-role-bootstrap/Ansible%20Molecule) [![release status](https://img.shields.io/github/commits-since/buluma/ansible-role-bootstrap/latest.svg)](https://github.com/buluma/ansible-role-bootstrap/releases)
+- [bootstrap](https://github.com/buluma/ansible-role-bootstrap) [![github](https://github.com/buluma/ansible-role-bootstrap/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-bootstrap/actions/workflows/molecule.yml) [![release status](https://img.shields.io/github/commits-since/buluma/ansible-role-bootstrap/latest.svg)](https://github.com/buluma/ansible-role-bootstrap/releases)
 
 ## [Second wave (yellow)](#second-wave)
 - [auditd](https://github.com/buluma/ansible-role-auditd) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/buluma/ansible-role-auditd/Ansible%20Molecule) [![release status](https://img.shields.io/github/commits-since/buluma/ansible-role-auditd/latest.svg)](https://github.com/buluma/ansible-role-auditd/releases)
