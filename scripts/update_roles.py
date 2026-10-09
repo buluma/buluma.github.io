@@ -6,6 +6,7 @@ Usage:
     python scripts/update_roles.py add <role_name> [<role_name> ...]
     python scripts/update_roles.py remove <role_name> [<role_name> ...]
     python scripts/update_roles.py list
+    python scripts/update_roles.py sync
     python scripts/update_roles.py regenerate
 
 The role list is stored in _data/ansible_roles.yml and is used by index.md
@@ -14,10 +15,19 @@ to auto-generate the Ansible roles table.
 
 import sys
 import os
+import json
+import urllib.error
+import urllib.request
 import yaml
 
 ROLES_FILE = "_data/ansible_roles.yml"
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+GITHUB_OWNER = "buluma"
+ROLE_REPOSITORY_PREFIX = "ansible-role-"
+ROLE_NAME_OVERRIDES = {
+    "digitalocean_agent": "digitalocean-agent",
+    "netiq_sentinel_syslog_event_source": "netiq-sentinel-syslog-event-source",
+}
 
 
 def load_roles():
@@ -89,6 +99,59 @@ def cmd_list():
     print(f"Total roles: {len(roles)}")
     for role in sorted(roles):
         print(f"  - {role}")
+
+
+def cmd_sync():
+    """Synchronize roles from non-archived public GitHub role repositories."""
+    roles = set()
+    page = 1
+    token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
+
+    while True:
+        url = (
+            f"https://api.github.com/users/{GITHUB_OWNER}/repos"
+            f"?type=public&per_page=100&page={page}"
+        )
+        request = urllib.request.Request(
+            url,
+            headers={
+                "Accept": "application/vnd.github+json",
+                "X-GitHub-Api-Version": "2022-11-28",
+            },
+        )
+        if token:
+            request.add_header("Authorization", f"Bearer {token}")
+
+        try:
+            with urllib.request.urlopen(request, timeout=30) as response:
+                repositories = json.load(response)
+        except urllib.error.HTTPError as error:
+            raise RuntimeError(
+                f"GitHub API request failed with HTTP {error.code} on page {page}"
+            ) from error
+
+        if not isinstance(repositories, list):
+            raise RuntimeError("GitHub API returned an unexpected repository response")
+        if not repositories:
+            break
+
+        for repository in repositories:
+            name = repository.get("name", "")
+            if repository.get("archived") or not name.startswith(ROLE_REPOSITORY_PREFIX):
+                continue
+            repository_role = name.removeprefix(ROLE_REPOSITORY_PREFIX)
+            roles.add(ROLE_NAME_OVERRIDES.get(repository_role, repository_role))
+
+        page += 1
+
+    if not roles:
+        raise RuntimeError(
+            f"No active {ROLE_REPOSITORY_PREFIX} repositories found for {GITHUB_OWNER}; "
+            "refusing to replace the current role list"
+        )
+
+    save_roles(roles)
+    print(f"Synchronized roles from {GITHUB_OWNER}'s active public repositories")
 
 
 def cmd_regenerate():
@@ -168,6 +231,9 @@ def main():
 
     elif command == "list":
         cmd_list()
+
+    elif command == "sync":
+        cmd_sync()
 
     elif command == "regenerate":
         cmd_regenerate()

@@ -54,6 +54,7 @@
 - cron
 - crowd
 - crun
+- cve_2024_3094
 - daemonize
 - datadog
 - debug
@@ -114,6 +115,7 @@
 - kibana
 - kubectl
 - kubernetes
+- lemp-stack
 - libvirt
 - local
 - locale
@@ -171,6 +173,7 @@
 - rclone
 - reboot
 - redis
+- redmine-1
 - remi
 - repo_epel
 - restore
@@ -187,6 +190,7 @@
 - sensu
 - service
 - setuptools
+- skeleton
 - snmpd
 - solr
 - sonarqube
