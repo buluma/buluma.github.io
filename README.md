@@ -55,6 +55,22 @@ python scripts/update_roles.py remove role_name
 python scripts/update_roles.py list
 ```
 
+### Syncing roles from GitHub
+
+```bash
+python scripts/update_roles.py sync
+```
+
+This syncs public `buluma/ansible-role-*` repositories into the role list and
+skips archived repositories. The **Update Ansible roles** workflow runs daily
+or can be started manually from the Actions tab; it opens or updates a PR for
+the generated change.
+
+The workflow needs a repository secret named `ROLE_SYNC_TOKEN`: a fine-grained
+token with **Contents: read and write** and **Pull requests: read and write**
+access to this repository. The token lets the generated PR trigger the normal
+PR CI workflow.
+
 The table is automatically regenerated when the site builds. No manual editing
 of `index.md` is needed for role changes.
 
