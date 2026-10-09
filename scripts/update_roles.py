@@ -21,13 +21,10 @@ import urllib.request
 import yaml
 
 ROLES_FILE = "_data/ansible_roles.yml"
+ROLE_REPOSITORIES_FILE = "_data/ansible_role_repositories.yml"
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 GITHUB_OWNER = "buluma"
 ROLE_REPOSITORY_PREFIX = "ansible-role-"
-ROLE_NAME_OVERRIDES = {
-    "digitalocean_agent": "digitalocean-agent",
-    "netiq_sentinel_syslog_event_source": "netiq-sentinel-syslog-event-source",
-}
 
 
 def load_roles():
@@ -55,6 +52,13 @@ def save_roles(roles):
             f.write(f"- {role}\n")
 
     print(f"Updated {len(sorted_roles)} roles in {ROLES_FILE}")
+
+
+def save_role_repositories(repositories):
+    """Save GitHub repository slugs for roles whose Galaxy names differ."""
+    filepath = os.path.join(REPO_ROOT, ROLE_REPOSITORIES_FILE)
+    with open(filepath, "w") as f:
+        yaml.safe_dump(repositories, f, sort_keys=True)
 
 
 def cmd_add(role_names):
@@ -104,6 +108,7 @@ def cmd_list():
 def cmd_sync():
     """Synchronize roles from non-archived public GitHub role repositories."""
     roles = set()
+    role_repositories = {}
     page = 1
     token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
 
@@ -140,7 +145,10 @@ def cmd_sync():
             if repository.get("archived") or not name.startswith(ROLE_REPOSITORY_PREFIX):
                 continue
             repository_role = name.removeprefix(ROLE_REPOSITORY_PREFIX)
-            roles.add(ROLE_NAME_OVERRIDES.get(repository_role, repository_role))
+            role_name = repository_role.replace("-", "_")
+            roles.add(role_name)
+            if role_name != repository_role:
+                role_repositories[role_name] = repository_role
 
         page += 1
 
@@ -151,6 +159,7 @@ def cmd_sync():
         )
 
     save_roles(roles)
+    save_role_repositories(role_repositories)
     print(f"Synchronized roles from {GITHUB_OWNER}'s active public repositories")
 
 

@@ -60,7 +60,7 @@
 - debug
 - demo
 - dhcpd
-- digitalocean-agent
+- digitalocean_agent
 - diskspace
 - dns
 - dnsmasq
@@ -115,7 +115,7 @@
 - kibana
 - kubectl
 - kubernetes
-- lemp-stack
+- lemp_stack
 - libvirt
 - local
 - locale
@@ -139,7 +139,7 @@
 - multi
 - mysql
 - netdata
-- netiq-sentinel-syslog-event-source
+- netiq_sentinel_syslog_event_source
 - nfs
 - nginx
 - nodejs
@@ -173,7 +173,6 @@
 - rclone
 - reboot
 - redis
-- redmine-1
 - remi
 - repo_epel
 - restore

@@ -61,10 +61,11 @@ python scripts/update_roles.py list
 python scripts/update_roles.py sync
 ```
 
-This syncs public `buluma/ansible-role-*` repositories into the role list and
-skips archived repositories. The **Update Ansible roles** workflow runs daily
-or can be started manually from the Actions tab; it opens or updates a PR for
-the generated change.
+This syncs public `buluma/ansible-role-*` repositories into the role list,
+converts dashes in repository names to Galaxy-compatible underscores, and skips
+archived repositories. The **Update Ansible roles** workflow runs daily or can
+be started manually from the Actions tab; it opens or updates a PR for the
+generated role list and repository slug mapping.
 
 The workflow needs a repository secret named `ROLE_SYNC_TOKEN`: a fine-grained
 token with **Contents: read and write** and **Pull requests: read and write**

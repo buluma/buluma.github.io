@@ -49,9 +49,11 @@ jobs:
           branch: automation/update-ansible-roles
           delete-branch: true
           base: master
-          add-paths: _data/ansible_roles.yml
+          add-paths: |
+            _data/ansible_roles.yml
+            _data/ansible_role_repositories.yml
           commit-message: Update Ansible role list
           title: Update Ansible role list
           body: |
-            Refresh `_data/ansible_roles.yml` from public `buluma/ansible-role-*` repositories.
-            Archived repositories are excluded.
+            Refresh the Ansible Galaxy role index and GitHub repository slug mapping from public `buluma/ansible-role-*` repositories.
+            Galaxy role names use underscores, and archived repositories are excluded.
